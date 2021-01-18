@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+}
+
+/* Splash Page */
+#splash-page {
+    height: 100vh;
+}
+#splash-bg-image {
+    background-image: url("https://i.imgur.com/nnppg2f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(2px); /* Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
+    -webkit-filter: blur(2px);
+}
+
+#site-logo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    min-width: 60%;
+}
+
+#splash-heading {
+    background-color: rgba(238, 238, 238, 0.5);
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0px 50px;
+    border-radius: 50px;
+}
+
+#splash-heading h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 0px;
+}
+
+#splash-button {
+    position: relative;
+    top: 20%;
+    margin: 0px 15px;
+}
+
+#enter-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(46, 173, 241);
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
