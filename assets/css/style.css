@@ -23,13 +23,13 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 35vw;
-    min-width: 60%;
+    width: 70vw;
 }
 
 #splash-button {
     position: relative;
     top: 20%;
+    transform: translateY(-50%);
     margin: 0px 15px;
 }
 
@@ -37,8 +37,9 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 70vw;
     background-color: rgb(226, 169, 73); 
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px 20px;
@@ -99,5 +100,58 @@ body {
 .day-button {
     color: black;
     background-color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 576px) {
+    #site-logo{
+        width: 47vw;
+    }
+
+    #enter-button{
+        width: 60vw;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #site-logo{
+        width: 41vw;
+    }
+    #enter-button{
+        width: 50vw;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #site-logo{
+        width: 34vw;
+    }
+     #enter-button{
+        width: 45vw;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #site-logo{
+        width: 28vw;
+    }
+
+     #enter-button{
+        width: 45vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #site-logo{
+        width: 25vw;
+    }
+     #enter-button{
+        width: 35vw;
+        font-size: 1.5em;
+    }
 }
 
