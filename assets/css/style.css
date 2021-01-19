@@ -49,9 +49,45 @@ body {
     border: 2.5px solid rgb(228, 228, 228);
 }
 
+/* Navbar */
+.navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+nav img {
+    width: 20vw;
+    height: auto;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+.navbar-toggler:focus{
+    border: 2.5px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 0; /*overriding bootstrap default*/
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse{
+    max-height: 60vh;
+    overflow: overlay;
+}
+
 /* Home Section */
 
 #home {
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,25 +103,24 @@ body {
     background-image: url("https://i.imgur.com/vCk7acS.jpg");
 }
 #time-select{
-    position: relative;
-    top: 82%; /* To be changed at breakpoints */
+    position: absolute;
+    bottom: 20px; 
     left: 25%;
     width: 55vw;
     height: auto;
     border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
+    font-size: 1em;
     text-align: center;
 }
 
 #home p {
     margin: 0px;
-    font-size: 4vw;
     color: black;
 }
 
 #time-button {
-    font-size: 4vw;
     padding: 5px 15px;
 }
 
@@ -113,9 +148,30 @@ body {
         width: 60vw;
         font-size: 1.2em;
     }
+
+      /* Navbar*/
+    .navbar-nav{
+    font-size: 1.3em;
+}
+
+    nav img {
+    width: 15vw;
+}
+
+    /*Home page*/
+    #time-select{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 35vw;
+        font-size: 1.1em
+    }
+    #time-button {
+        padding: 5px 25px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    /*Splash page*/
     #site-logo{
         width: 41vw;
     }
@@ -123,6 +179,30 @@ body {
         width: 50vw;
         font-size: 1.3em;
     }
+
+    /* Navbar*/
+     .navbar-nav{
+        font-size: 1.2em;
+    }
+
+    nav img {
+        width: 10vw;
+    }
+
+    .nav-item{
+        margin: 0px 3px;
+    }
+
+    .navbar-collapse{
+    overflow: initial; /*remove scroll bar*/
+}
+
+    /*Home page*/
+    #time-select{
+        width: 30vw;
+        font-size: 1.2em;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -132,6 +212,23 @@ body {
      #enter-button{
         width: 45vw;
         font-size: 1.3em;
+    }
+
+    /*Navbar*/
+    .navbar-nav{
+        font-size: 1.2em!important;
+    }
+
+    .nav-item{
+        margin: 0px 5px;
+    }
+
+    /*Home page*/
+    #home{
+        height: 80vh;
+    }
+    #time-select{
+        width: 300px;
     }
 }
 
@@ -143,6 +240,20 @@ body {
      #enter-button{
         width: 45vw;
     }
+
+      /* Navbar*/
+    nav img {
+        width: 7vw;
+    }
+
+    .navbar-nav{
+        font-size: 1.3em!important;
+    }
+
+    .nav-item{
+        margin: 0px 10px;
+    }
+    
 }
 
 @media only screen and (min-width: 1400px) {
@@ -151,6 +262,12 @@ body {
     }
      #enter-button{
         width: 35vw;
+        font-size: 1.5em;
+    }
+
+     /*Home page*/
+    #time-select{
+        width: 400px;
         font-size: 1.5em;
     }
 }
