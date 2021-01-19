@@ -15,7 +15,7 @@ body {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    filter: blur(2px) grayscale(80%); /* Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
+    filter: blur(2px) grayscale(80%); /* (add source for filter) Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
     -webkit-filter: blur(2px) grayscale(80%);
 }
 
@@ -46,5 +46,11 @@ body {
 #enter-button:hover {
     background-color: rgb(226, 169, 73);
     border: 2.5px solid rgb(228, 228, 228);
+}
+
+/* Home Section */
+
+#home {
+    background-image: url("");
 }
 
