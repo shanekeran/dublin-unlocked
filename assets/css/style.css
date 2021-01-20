@@ -173,6 +173,24 @@ nav a {
     background-image: url("https://i.imgur.com/LmWAgSf.jpg");
 }
 
+#attractions-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 0px;
+}
+
+#attractions-title h1{
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
 
 /* Media Queries */
 
@@ -234,10 +252,6 @@ nav a {
 
     nav img {
         width: 10vw;
-    }
-
-    .nav-item{
-        margin: 0px 3px;
     }
 
     .navbar-collapse{
