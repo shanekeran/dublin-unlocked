@@ -5,7 +5,7 @@ $( document ).ready(function() {
         $("#main-content").css("display","block");
     }); 
     $("#time-button").on("click", function(){
-        $("#home").toggleClass("home-image-night home-image-day");
+        $("#home-image").toggleClass("home-image-night home-image-day");
         $("#time-button").toggleClass("day-button night-button");
         $("#button-text").text($("#button-text").text() == "Night" ? "Day":"Night");
     }); 
