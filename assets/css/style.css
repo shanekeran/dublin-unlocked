@@ -148,7 +148,7 @@ nav a {
 }
 
 #home-content p{
-    padding: 0px 10px;
+    padding: 0px 20px;
     text-align: center;
     font-size: 3vw;
 }
@@ -233,6 +233,11 @@ nav a {
         font-size: 2vw;
     }
 
+    /* Attractions */
+    #attractions-title h1{
+        font-size: 4vw;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -298,6 +303,10 @@ nav a {
     }
     #time-select{
         width: 300px;
+    }
+
+    #home-content p {
+        margin-bottom: 50px;
     }
 }
 
