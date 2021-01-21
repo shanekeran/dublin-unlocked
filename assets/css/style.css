@@ -220,6 +220,40 @@ nav a {
     width: 30vw;
 }
 
+/* Weather */
+
+#weather-image{
+    position: relative;
+    background-attachment: fixed; /* Code from w3schools. Source: https://www.w3schools.com/howto/howto_css_parallax.asp */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+.weather-image-day{
+    background-image: url("https://i.imgur.com/0G1cSKr.jpeg");
+}
+
+#weather-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 0px;
+}
+
+#weather-title h1{
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
 
 /* Media Queries */
 
@@ -263,7 +297,7 @@ nav a {
     }
 
     /* Attractions */
-    #attractions-title h1{
+    #attractions-title h1, #weather-title h1{
         font-size: 4vw;
     }
 
