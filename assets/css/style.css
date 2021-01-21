@@ -191,6 +191,35 @@ nav a {
     font-weight: 500;
 }
 
+.map-buttons{
+    padding: 15px;
+    text-align: center;
+}
+
+.map-buttons button{
+    font-size: 0.9em;
+}
+
+.fa-utensils, .fa-tree, .fa-map-pin, .fa-theater-masks {
+    text-align: center;
+    font-size: 10vw;
+    margin-bottom: 5px;
+}
+
+/* Events */
+
+#events{
+    margin-top: 40px; /* Will need to be adjusted in media queries */
+}
+
+#events h1{
+    text-align: center;
+}
+
+.event-image-day{
+    width: 30vw;
+}
+
 
 /* Media Queries */
 
@@ -236,6 +265,10 @@ nav a {
     /* Attractions */
     #attractions-title h1{
         font-size: 4vw;
+    }
+
+    .fa-utensils, .fa-tree, .fa-map-pin, .fa-theater-masks{
+        font-size: 6vw;
     }
 
 }
