@@ -278,8 +278,23 @@ nav a {
     font-weight: 500;
 }
 
+#weather-content{
+    text-align: center;
+}
+
+#weather-content h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin: 15px 0px;
+}
+
+#weather-content p{
+    padding: 0px 20px;
+    font-size: 3vw;
+}
+
  .fa-cloud-showers-heavy {
-        font-size: 20vw;
+        font-size: 12vw;
     }
 
 /* Hotels */
@@ -394,11 +409,11 @@ form {
         padding: 5px 25px;
     }
 
-    #home-content h1{
+    #home-content h1, #weather-content h1{
         font-size: 3vw;
     }
 
-    #home-content p{
+    #home-content p, #weather-content p{
         font-size: 2vw;
     }
 
@@ -414,7 +429,7 @@ form {
     /* Weather */
 
     .fa-cloud-showers-heavy {
-        font-size: 14vw;
+        font-size: 10vw;
     }
 
 }
@@ -448,12 +463,18 @@ form {
         font-size: 1.2em;
     }
 
-      #home-content h1{
+      #home-content h1, #weather-content h1{
         font-size: 2.2vw;
     }
 
-    #home-content p{
+    #home-content p, #weather-content p{
         font-size: 1.5vw;
+    }
+
+    /* Weather */
+    #rain-icon{
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
 }
@@ -487,6 +508,11 @@ form {
     #home-content p {
         margin-bottom: 50px;
     }
+
+    /* Weather */
+    .fa-cloud-showers-heavy {
+        font-size: 8vw;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -512,11 +538,11 @@ form {
     }
 
     /* Home page */
-     #home-content h1{
+     #home-content h1, #weather-content h1{
         font-size: 2vw;
     }
 
-    #home-content p{
+    #home-content p, #weather-content p{
         font-size: 1.2vw;
     }
     
@@ -537,11 +563,11 @@ form {
         font-size: 1.5em;
     }
 
-     #home-content h1{
+     #home-content h1, #weather-content h1{
         font-size: 2.2em;
     }
 
-    #home-content p{
+    #home-content p, #weather-content p{
         font-size: 1.3em;
     }
 }
