@@ -54,6 +54,10 @@ body {
     padding: 0;
 }
 
+#nav-container{
+    width: 100%;
+}
+
 .navbar-nav{
     margin-left: auto;
     margin-right: auto;
@@ -315,20 +319,41 @@ nav a {
 /* Gallery */
 
 #gallery-container{
+    position: relative;
+    height: 60vh; 
     overflow: hidden;
 }
 
 #gallery{
-    height: 40vw;
-    width: 250%;
+    position: absolute;
+    width: max-content;
+    animation:linear infinite;
+    animation-name: scroll;
+    animation-duration: 20s;
+    -webkit-animation:linear infinite;
+    -webkit-animation-name: scroll;
+    -webkit-animation-duration: 85s;
 }
 
 #gallery img{
-    height: 20vw;
+    height: 35vw;
     width: auto;
-    margin: 5px 5px;
     padding: 5px;
 }
+
+@keyframes scroll {
+    0% { left: 0%;}
+    50%{ left : -100%;}
+    100%{ left: 0%;}
+}
+
+@-webkit-keyframes scroll {
+    0% { left: 0%;}
+    50%{ left : -100%;}
+    100%{ left: 0%;}
+}
+
+
 
 
 /* Media Queries */
