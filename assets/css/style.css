@@ -274,6 +274,10 @@ nav a {
     font-weight: 500;
 }
 
+ .fa-cloud-showers-heavy {
+        font-size: 20vw;
+    }
+
 /* Hotels */
 
 #hotels-image{
@@ -306,6 +310,24 @@ nav a {
     padding: 5px 10px;
     font-size: 6vw;
     font-weight: 500;
+}
+
+/* Gallery */
+
+#gallery-container{
+    overflow: hidden;
+}
+
+#gallery{
+    height: 40vw;
+    width: 250%;
+}
+
+#gallery img{
+    height: 20vw;
+    width: auto;
+    margin: 5px 5px;
+    padding: 5px;
 }
 
 
@@ -357,6 +379,12 @@ nav a {
 
     .fa-utensils, .fa-tree, .fa-map-pin, .fa-theater-masks{
         font-size: 6vw;
+    }
+
+    /* Weather */
+
+    .fa-cloud-showers-heavy {
+        font-size: 14vw;
     }
 
 }
