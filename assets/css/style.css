@@ -225,6 +225,9 @@ nav a {
 .events-image-day{
     background-image: url("https://i.imgur.com/5ERbBXu.jpg");
 }
+.events-image-night{
+    background-image: url("https://i.imgur.com/LmP5K62.jpg");
+}
 
 #events-title{
     position: absolute;
@@ -258,6 +261,9 @@ nav a {
 
 .weather-image-day{
     background-image: url("https://i.imgur.com/0G1cSKr.jpeg");
+}
+.weather-image-night{
+    background-image: url("https://i.imgur.com/x81FSyI.jpg");
 }
 
 #weather-title{
@@ -311,6 +317,9 @@ nav a {
 
 .hotels-image-day{
     background-image: url("https://i.imgur.com/o0zyuEk.jpg");
+}
+.hotels-image-night{
+    background-image: url("https://i.imgur.com/OuR1vyK.jpg");
 }
 
 #hotels-title{
