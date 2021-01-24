@@ -1,15 +1,6 @@
+/* General */
 body {
     margin: 0px;
-}
-
-.day-bg{
-    background-color: #e2e2e2fc;
-    color: #2d2d2d;
-}
-
-.night-bg{
-    background-color: #3d3e3efc;
-    color: white;
 }
 
 /* Splash Page */
@@ -57,6 +48,41 @@ body {
 #enter-button:hover {
     background-color: rgb(226, 169, 73);
     border: 2.5px solid rgb(228, 228, 228);
+}
+
+/* Main Content - General */
+
+.day-bg{
+    background-color: #e2e2e2fc;
+    color: #2d2d2d;
+}
+
+.night-bg{
+    background-color: #3d3e3efc;
+    color: white;
+}
+
+.section-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+    background-color: #f7f7f7fc;
+    border: 3px solid black;
+    border-radius: 20px 0px;
+}
+.section-title-night{
+    background-color: #1f1f1f;
+    border: 3px solid white;
+    color: white;
+}
+
+.section-title h1{
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 6vw;
+    font-weight: 500;
 }
 
 /* Navbar */
@@ -187,24 +213,6 @@ nav a {
     background-image: url("https://i.imgur.com/LmWAgSf.jpg");
 }
 
-#attractions-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: fit-content;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 20px 0px;
-}
-
-#attractions-title h1{
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 6vw;
-    font-weight: 500;
-}
-
 .map-buttons{
     padding: 15px;
     text-align: center;
@@ -239,24 +247,6 @@ nav a {
     background-image: url("https://i.imgur.com/LmP5K62.jpg");
 }
 
-#events-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: fit-content;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 20px 0px;
-}
-
-#events-title h1{
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 6vw;
-    font-weight: 500;
-}
-
 /* Weather */
 
 #weather-image{
@@ -274,24 +264,6 @@ nav a {
 }
 .weather-image-night{
     background-image: url("https://i.imgur.com/x81FSyI.jpg");
-}
-
-#weather-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: fit-content;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 20px 0px;
-}
-
-#weather-title h1{
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 6vw;
-    font-weight: 500;
 }
 
 #weather-content{
@@ -330,24 +302,6 @@ nav a {
 }
 .hotels-image-night{
     background-image: url("https://i.imgur.com/OuR1vyK.jpg");
-}
-
-#hotels-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: fit-content;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 20px 0px;
-}
-
-#hotels-title h1{
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 6vw;
-    font-weight: 500;
 }
 
 /* Gallery */

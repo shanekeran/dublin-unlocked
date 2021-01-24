@@ -18,6 +18,7 @@ $( document ).ready(function() {
         $("#events-image").toggleClass("events-image-night events-image-day");
         $("#weather-image").toggleClass("weather-image-night weather-image-day");
         $("#hotels-image").toggleClass("hotels-image-night hotels-image-day");
+        $(".section-title").toggleClass("section-title-night");
         // Navbar logo toggle (code learned on stackoverflow [https://stackoverflow.com/questions/19057513/toggling-an-image-src-with-jquery] )
         if($("#nav-logo").attr("src") === blackLogo){
             $("#nav-logo").attr("src", whiteLogo);
