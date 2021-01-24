@@ -2,6 +2,16 @@ body {
     margin: 0px;
 }
 
+.day-bg{
+    background-color: #e2e2e2fc;
+    color: #2d2d2d;
+}
+
+.night-bg{
+    background-color: #3d3e3efc;
+    color: white;
+}
+
 /* Splash Page */
 #splash-page {
     height: 100vh;
