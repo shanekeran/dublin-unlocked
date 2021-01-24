@@ -335,42 +335,47 @@ nav a {
 
 #gallery-container{
     position: relative;
-    height: 40vh; 
+    height: 240px; 
     overflow: hidden;
 }
 
 #gallery{
-    position: absolute;
+    position: relative;
     width: max-content;
+}
+
+.gallery-row{
+    position: relative;
     animation:linear infinite;
     animation-name: scroll;
     animation-duration: 20s;
     -webkit-animation:linear infinite;
     -webkit-animation-name: scroll;
-    -webkit-animation-duration: 85s;
+    -webkit-animation-duration: 80s;
 }
 
 #gallery img{
-    height: 35vw;
+    height: 120px;
     width: auto;
     padding: 5px;
 }
 
 @keyframes scroll {
-    0% { left: 0%;}
-    50%{ left : -100%;}
-    100%{ left: 0%;}
-}
+    0% { right: 0%;}
+    50%{ right : 50%;}
+    100%{ right: 0%;}
+} 
 
 @-webkit-keyframes scroll {
-    0% { left: 0%;}
-    50%{ left : -100%;}
-    100%{ left: 0%;}
+    0% { right: 0%;}
+    50%{ right : 50%;}
+    100%{ right: 0%;}
+    
 }
 
 /* Form */
 
-form {
+#contact-container {
     text-align: center;
 }
 
@@ -432,6 +437,28 @@ form {
         font-size: 10vw;
     }
 
+    /* Gallery */
+    #gallery-container{
+        height: 280px;
+    }
+
+    #gallery img{
+        height: 140px;
+    }
+
+    @keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 45%;}
+    100%{ right: 0%;}
+} 
+
+    @-webkit-keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 45%;}
+    100%{ right: 0%;}
+    
+}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,6 +504,27 @@ form {
         margin-bottom: auto;
     }
 
+    /* Gallery */
+    #gallery-container{
+        height: 340px;
+    }
+
+    #gallery img{
+        height: 170px;
+    }
+
+    @keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 42%;}
+    100%{ right: 0%;}
+    } 
+
+     @-webkit-keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 42%;}
+    100%{ right: 0%;}
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -513,6 +561,28 @@ form {
     .fa-cloud-showers-heavy {
         font-size: 8vw;
     }
+
+    /* Gallery */
+    #gallery-container{
+        height: 400px;
+    }
+
+    #gallery img{
+        height: 200px;
+    }
+
+    @keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 40%;}
+    100%{ right: 0%;}
+    } 
+
+       @-webkit-keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 40%;}
+    100%{ right: 0%;}
+    
+}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -545,6 +615,28 @@ form {
     #home-content p, #weather-content p{
         font-size: 1.2vw;
     }
+
+    /* Gallery */
+    #gallery-container{
+        height: 420px;
+    }
+
+    #gallery img{
+        height: 210px;
+    }
+
+    @keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 35%;}
+    100%{ right: 0%;}
+    } 
+
+       @-webkit-keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 35%;}
+    100%{ right: 0%;}
+    
+}
     
 }
 
@@ -570,5 +662,28 @@ form {
     #home-content p, #weather-content p{
         font-size: 1.3em;
     }
+
+    /* Gallery */
+    #gallery-container{
+        height: 28vw;
+    }
+
+    #gallery img{
+        height: 14vw;
+    }
+
+    @keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 28%;}
+    100%{ right: 0%;}
+    } 
+
+       @-webkit-keyframes scroll {
+    0% { right: 0%;}
+    50%{ right : 28%;}
+    100%{ right: 0%;}
+    
+}
+
 }
 
