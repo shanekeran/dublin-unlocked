@@ -104,7 +104,7 @@ nav a {
 }
 
 .home-image-day {
-    background-image: url("https://i.imgur.com/1FsdaQ5.jpg");
+    background-image: url("https://i.imgur.com/BEUVNet.jpg");
 }
 
 .home-image-night{
@@ -333,6 +333,12 @@ nav a {
 
 /* Gallery */
 
+hr{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #gallery-container{
     position: relative;
     height: 240px; 
@@ -375,8 +381,14 @@ nav a {
 
 /* Form */
 
-#contact-container {
+#contact {
     text-align: center;
+    height: 50vh;
+    display: flex;
+}
+
+#contact-container{
+    margin: auto;
 }
 
 #fullname, #email, #comment {
@@ -410,7 +422,6 @@ footer{
 #footer-content i{
     margin: 0px 5px;
 }
-
 
 
 /* Media Queries */
@@ -562,6 +573,12 @@ footer{
     0% { right: 0%;}
     50%{ right : 42%;}
     100%{ right: 0%;}
+    }
+
+    /* Contact */
+
+    #fullname, #email, #comment{
+        margin: 8px 0;
     }
 
     /* Footer */
