@@ -379,6 +379,38 @@ nav a {
     text-align: center;
 }
 
+#fullname, #email, #comment {
+    border: 1px solid #333333;
+    margin: 5px 0px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+#fullname, #email{
+    width: 60vw;
+}
+
+#comment{
+    width: 50vw;
+}
+
+/* Footer */
+
+footer{
+    border-top: 1px solid black;
+    margin-top: 40px;
+}
+
+#footer-content{
+    font-size: 2em;
+    text-align: center;
+}
+
+#footer-content i{
+    margin: 0px 5px;
+}
+
 
 
 /* Media Queries */
@@ -447,17 +479,24 @@ nav a {
     }
 
     @keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 45%;}
-    100%{ right: 0%;}
-} 
+        0% { right: 0%;}
+        50%{ right : 45%;}
+        100%{ right: 0%;}
+    } 
 
     @-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 45%;}
-    100%{ right: 0%;}
-    
-}
+        0% { right: 0%;}
+        50%{ right : 45%;}
+        100%{ right: 0%;}
+    }
+
+    #fullname, #email{
+        width: 30vw;
+    }
+
+    #comment{
+        width: 40vw;
+    }
 
 }
 
@@ -525,6 +564,11 @@ nav a {
     100%{ right: 0%;}
     }
 
+    /* Footer */
+
+    #footer-content{
+        font-size: 2.3em;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -626,17 +670,24 @@ nav a {
     }
 
     @keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 35%;}
-    100%{ right: 0%;}
+        0% { right: 0%;}
+        50%{ right : 35%;}
+        100%{ right: 0%;}
     } 
 
        @-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 35%;}
-    100%{ right: 0%;}
-    
-}
+        0% { right: 0%;}
+        50%{ right : 35%;}
+        100%{ right: 0%;}
+    }
+
+    #fullname, #email{
+        width: 20vw;
+    }
+
+    #comment{
+        width: 30vw;
+    }
     
 }
 
@@ -673,17 +724,21 @@ nav a {
     }
 
     @keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 28%;}
-    100%{ right: 0%;}
+        0% { right: 0%;}
+        50%{ right : 28%;}
+        100%{ right: 0%;}
     } 
 
        @-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 28%;}
-    100%{ right: 0%;}
-    
-}
+        0% { right: 0%;}
+        50%{ right : 28%;}
+        100%{ right: 0%;}
+    }
 
+    /* Footer */
+
+    #footer-content{
+        font-size: 2.8em;
+    }
 }
 
