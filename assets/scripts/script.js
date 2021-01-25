@@ -81,14 +81,25 @@ request.send()
 
 var request = new XMLHttpRequest()
 
-request.open("GET","https://app.ticketmaster.com/discovery/v2/events.json?countryCode=IE&apikey=DUV4bAYj0383DtTig69KAtWGmipVv1rt&geoPoint=gc7x&radius=30&sort=random" , true)
+request.open("GET","https://app.ticketmaster.com/discovery/v2/events.json?countryCode=IE&apikey=DUV4bAYj0383DtTig69KAtWGmipVv1rt&geoPoint=gc7x&radius=20&sort=random" , true)
 
 request.onload = function () {
   // Accessing JSON data
-  var eventData = JSON.parse(this.response);
+  var ticketMaster = JSON.parse(this.response);
 
   if (request.status >= 200 && request.status < 400) {
     console.log("Success");
+
+    for (var i = 0; i < 6; i++) {
+        var eventData = ticketMaster._embedded.events[i];
+        var eventTitle = $(".event-name")[i];
+        var venue = $(".venue")[i];
+        var eventDate = $(".event-date")[i];
+        
+        $(eventTitle).html(eventData.name);
+        $(venue).html(eventData._embedded.venues[0].name);
+        $(eventDate).html(eventData.dates.start.localDate);
+    }
   } else {
 console.log(error);
 }
