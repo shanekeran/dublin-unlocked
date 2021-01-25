@@ -44,9 +44,15 @@ request.onload = function () {
 if (request.status >= 200 && request.status < 400) {
     console.log("Success")
     for (var i = 0; i < 5;i++) {
-        var today = data.location.values[i];
-        var dateElement = $(".date")[i];
-        $(dateElement).html(today.datetime);
+        var forecast = data.location.values[i];
+        var dateElement = $(".date")[i]; 
+        var conditionsElement = $(".conditions")[i];
+        var tempElement = $(".max-temp")[i]; 
+        var precipElement = $(".precip")[i];
+        $(dateElement).html(forecast.datetime); // Adds each date above forecast
+        $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
+        $(tempElement).html(forecast.maxt); // Adds daily max temperature
+        $(precipElement).html(forecast.precip); // Adds daily precipitation level
   } 
 } else{
 console.log(error);
