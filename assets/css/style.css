@@ -294,22 +294,30 @@ nav a {
         font-size: 12vw;
 }
 
-.icon img {
-    width: 8vw;
+.w-icon {
+    width: 16vw;
     height: auto;
 }
 
 #weather-api{
     text-align: center;
+    padding: 50px 0px;
 }
 
 .daily-forecast div{
     justify-content: center;
+    font-size: 0.9em;
 }
 
 .daily-forecast div img{
     margin: 15px 0px;
 }
+
+.date{
+    text-decoration: underline;
+}
+
+
 
 /* Hotels */
 
@@ -479,6 +487,10 @@ footer{
         font-size: 10vw;
     }
 
+    .w-icon{
+        width: 13vw;
+    }
+
     /* Gallery */
     #gallery-container{
         height: 280px;
@@ -551,6 +563,10 @@ footer{
     #rain-icon{
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    .w-icon{
+        width: 10vw;
     }
 
     /* Gallery */
@@ -703,6 +719,12 @@ footer{
 
     #comment{
         width: 30vw;
+    }
+
+    /* Weather */
+
+    .w-icon{
+        width: 8vw;
     }
     
 }

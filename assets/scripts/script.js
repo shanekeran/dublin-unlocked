@@ -56,8 +56,8 @@ if (request.status >= 200 && request.status < 400) {
 
         $(dateElement).html(date); // Adds each date above forecast
         $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
-        $(tempElement).html(forecast.maxt); // Adds daily max temperature
-        $(precipElement).html(forecast.precip); // Adds daily precipitation level
+        $(tempElement).html(forecast.maxt+"℃"); // Adds daily max temperature
+        $(precipElement).html(forecast.precip+"mm"); // Adds daily precipitation level
 
         // Display weather icon depending on the current condition forecasted.
         if(forecast.conditions === "Rain"){
