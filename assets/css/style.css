@@ -41,7 +41,7 @@ body {
     width: 70vw;
     background-color: rgb(226, 169, 73); 
     font-size: 1.3em;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -59,19 +59,15 @@ body {
 
 .night-bg{
     background-color: #3d3e3efc;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .white-font{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .white-border{
-    border-color: white!important;
-}
-
-.black-border{
-    border: 1px solid black; /* delete after testing */
+    border-color: rgb(255, 255, 255)!important;
 }
 
 .section-title{
@@ -81,13 +77,13 @@ body {
     transform: translateX(-50%) translateY(-50%);
     width: fit-content;
     background-color: #f7f7f7fc;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 20px 0px;
 }
 .section-title-night{
     background-color: #1f1f1f;
-    border: 3px solid white;
-    color: white;
+    border: 3px solid rgb(255, 255, 255)e;
+    color: rgb(255, 255, 255);
 }
 
 .section-title h1{
@@ -120,11 +116,11 @@ nav img {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .navbar-toggler {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     font-size: 5vw;
 }
 .navbar-toggler:focus{
@@ -161,7 +157,7 @@ nav a {
     left: 25%;
     width: 55vw;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
     font-size: 1em;
@@ -170,7 +166,7 @@ nav a {
 
 #home-image p {
     margin: 0px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #time-button {
@@ -181,13 +177,13 @@ nav a {
     border: 2px solid red;
 }
 .night-button{
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .day-button {
-    color: black;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 #home h1 {
@@ -254,6 +250,15 @@ nav a {
 }
 .events-image-night{
     background-image: url("https://i.imgur.com/LmP5K62.jpg");
+}
+
+#event-container{
+    text-align: center;
+}
+
+#event-api-container{
+    width: 80%;
+    height: auto;
 }
 
 /* Weather */
@@ -417,7 +422,7 @@ hr{
 /* Footer */
 
 footer{
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(0, 0, 0);
     margin-top: 40px;
 }
 

@@ -39,12 +39,12 @@ request.open('GET', 'https://weather.visualcrossing.com/VisualCrossingWebService
 
 request.onload = function () {
   // Accessing JSON data
-  var data = JSON.parse(this.response)
+  var weatherData = JSON.parse(this.response)
 
 if (request.status >= 200 && request.status < 400) {
     console.log("Success")
     for (var i = 0; i < 5;i++) {
-        var forecast = data.location.values[i];
+        var forecast = weatherData.location.values[i];
         var epochDate = new Date(forecast.datetime); // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
         var date =  epochDate.getDate()+"/"+(epochDate.getMonth()+1)+"/"+epochDate.getFullYear(); // converts epoch date to dd/mm/yyyy  // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
         var dateElement = $(".date")[i];
@@ -52,7 +52,6 @@ if (request.status >= 200 && request.status < 400) {
         var conditionsElement = $(".conditions")[i];
         var tempElement = $(".max-temp")[i]; 
         var precipElement = $(".precip")[i];
-        var convertDate = new Date(forecast.datetime)
 
         $(dateElement).html(date); // Adds each date above forecast
         $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
@@ -72,6 +71,25 @@ if (request.status >= 200 && request.status < 400) {
         }
   } 
 } else{
+console.log(error);
+}
+}
+// Send request
+request.send()
+
+// Event API
+
+var request = new XMLHttpRequest()
+
+request.open("GET","https://app.ticketmaster.com/discovery/v2/events.json?countryCode=IE&apikey=DUV4bAYj0383DtTig69KAtWGmipVv1rt&geoPoint=gc7x&radius=30&sort=random" , true)
+
+request.onload = function () {
+  // Accessing JSON data
+  var eventData = JSON.parse(this.response);
+
+  if (request.status >= 200 && request.status < 400) {
+    console.log("Success");
+  } else {
 console.log(error);
 }
 }
