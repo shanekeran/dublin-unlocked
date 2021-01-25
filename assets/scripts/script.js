@@ -1,5 +1,5 @@
 var blackLogo = "assets/images/nav-logo.png";
-var whiteLogo = "assets/images/nav-logo-night.png"
+var whiteLogo = "assets/images/nav-logo-night.png";
 
 $( document ).ready(function() {
     // On click of the enter button it will hide splash page and show the main content.
@@ -19,6 +19,10 @@ $( document ).ready(function() {
         $("#weather-image").toggleClass("weather-image-night weather-image-day");
         $("#hotels-image").toggleClass("hotels-image-night hotels-image-day");
         $(".section-title").toggleClass("section-title-night");
+        // Toggle Navbar font colour 
+        $(".nav-link").toggleClass("white-font");
+        $(".navbar-toggler").toggleClass("white-font");
+        $(".navbar-toggler").toggleClass("white-border");
         // Navbar logo toggle (code learned on stackoverflow [https://stackoverflow.com/questions/19057513/toggling-an-image-src-with-jquery] )
         if($("#nav-logo").attr("src") === blackLogo){
             $("#nav-logo").attr("src", whiteLogo);
