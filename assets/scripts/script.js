@@ -31,3 +31,26 @@ $( document ).ready(function() {
             };
     }); 
 });
+
+// Weather API
+var request = new XMLHttpRequest()
+
+request.open('GET', 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?aggregateHours=24&combinationMethod=aggregate&contentType=json&unitGroup=metric&locationMode=single&key=8KVKK772DZ7G34C7C4PNPX5LQ&dataElements=default&locations=Dublin%2CIE', true)
+
+request.onload = function () {
+  // Accessing JSON data
+  var data = JSON.parse(this.response)
+
+if (request.status >= 200 && request.status < 400) {
+    console.log("Success")
+    for (var i = 0; i < 5;i++) {
+        var today = data.location.values[i];
+        var dateElement = $(".date")[i];
+        $(dateElement).html(today.datetime);
+  } 
+} else{
+console.log(error);
+}
+}
+// Send request
+request.send()
