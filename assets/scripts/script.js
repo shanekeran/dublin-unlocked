@@ -45,16 +45,21 @@ if (request.status >= 200 && request.status < 400) {
     console.log("Success")
     for (var i = 0; i < 5;i++) {
         var forecast = data.location.values[i];
-        var dateElement = $(".date")[i]; 
+        var epochDate = new Date(forecast.datetime); // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
+        var date =  epochDate.getDate()+"/"+(epochDate.getMonth()+1)+"/"+epochDate.getFullYear(); // converts epoch date to dd/mm/yyyy  // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
+        var dateElement = $(".date")[i];
         var iconElement = $(".w-icon")[i];
         var conditionsElement = $(".conditions")[i];
         var tempElement = $(".max-temp")[i]; 
         var precipElement = $(".precip")[i];
-        $(dateElement).html(forecast.datetime); // Adds each date above forecast
+        var convertDate = new Date(forecast.datetime)
+
+        $(dateElement).html(date); // Adds each date above forecast
         $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
         $(tempElement).html(forecast.maxt); // Adds daily max temperature
         $(precipElement).html(forecast.precip); // Adds daily precipitation level
 
+        // Display weather icon depending on the current condition forecasted.
         if(forecast.conditions === "Rain"){
             $(iconElement).attr("src","assets/images/weather/rain.png");
         }else if((forecast.conditions === "Rain, Overcast")||(forecast.conditions === "Rain, Partially cloudy")) {
@@ -65,7 +70,6 @@ if (request.status >= 200 && request.status < 400) {
         } else {
             $(iconElement).attr("src","assets/images/weather/sunny.png");
         }
-        console.log(forecast.conditions);
   } 
 } else{
 console.log(error);
