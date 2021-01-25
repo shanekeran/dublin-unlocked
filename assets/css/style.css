@@ -292,7 +292,24 @@ nav a {
 
  .fa-cloud-showers-heavy {
         font-size: 12vw;
-    }
+}
+
+.icon img {
+    width: 8vw;
+    height: auto;
+}
+
+#weather-api{
+    text-align: center;
+}
+
+.daily-forecast div{
+    justify-content: center;
+}
+
+.daily-forecast div img{
+    margin: 15px 0px;
+}
 
 /* Hotels */
 

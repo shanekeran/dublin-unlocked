@@ -46,6 +46,7 @@ if (request.status >= 200 && request.status < 400) {
     for (var i = 0; i < 5;i++) {
         var forecast = data.location.values[i];
         var dateElement = $(".date")[i]; 
+        var iconElement = $(".w-icon")[i];
         var conditionsElement = $(".conditions")[i];
         var tempElement = $(".max-temp")[i]; 
         var precipElement = $(".precip")[i];
@@ -53,6 +54,18 @@ if (request.status >= 200 && request.status < 400) {
         $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
         $(tempElement).html(forecast.maxt); // Adds daily max temperature
         $(precipElement).html(forecast.precip); // Adds daily precipitation level
+
+        if(forecast.conditions === "Rain"){
+            $(iconElement).attr("src","assets/images/weather/rain.png");
+        }else if((forecast.conditions === "Rain, Overcast")||(forecast.conditions === "Rain, Partially cloudy")) {
+            $(iconElement).attr("src","assets/images/weather/rain.png");
+        }
+        else if( (forecast.conditions === "Partially cloudy")||(forecast.conditions === "Overcast")){
+            $(iconElement).attr("src","assets/images/weather/cloudy.png");
+        } else {
+            $(iconElement).attr("src","assets/images/weather/sunny.png");
+        }
+        console.log(forecast.conditions);
   } 
 } else{
 console.log(error);
