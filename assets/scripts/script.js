@@ -92,17 +92,31 @@ request.onload = function () {
 
     for (var i = 0; i < 6; i++) {
         var eventData = ticketMaster._embedded.events[i];
+        var eventGallery;
         var eventTitle = $(".event-name")[i];
         var venue = $(".venue")[i];
         var eventDate = $(".event-date")[i];
+        var eventImage;
         
         $(eventTitle).html(eventData.name);
         $(venue).html(eventData._embedded.venues[0].name);
         $(eventDate).html(eventData.dates.start.localDate);
-    }
+        //for loop iterates through the first 6 images of an event and sets the first image with a width of 1000px or more.
+         for (var j = 0; j < 6; j++) {
+            var eventGallery = eventData.images[j];
+            var eventImage = $(".event-image")[i];
+            if(eventGallery.width > 1000){
+                $(eventImage).attr("src", eventGallery.url);
+                break;
+            } else { // If there are no high quality images then the Dublin unlocked logo is displayed.
+                $(eventImage).attr("src", "assets/images/site-logo.png");
+            }
+            } // end of for loop 
+    }// end of for loop
+
   } else {
 console.log(error);
-}
+};
 }
 // Send request
 request.send()
