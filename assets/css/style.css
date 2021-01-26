@@ -254,11 +254,49 @@ nav a {
 
 #event-container{
     text-align: center;
+    width: 90vw;
+    height: 40vh;
+    min-height: 60vw;
+}
+
+#event-container h1{
+    font-size: 3em;
+    margin-top: 3%;
 }
 
 #event-api-container{
-    width: 80%;
-    height: auto;
+    height: 70vh;
+}
+
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.carousel-caption h3{
+    font-size: 0.7em;
+}
+
+.carousel-caption p {
+    font-weight: 500;
+    font-size: 0.6em;
+}
+
+.carousel ol{
+    margin-bottom: 0.4rem;
+}
+
+.carousel-dark .carousel-indicators li{
+    border: 1px solid #fff;
+}
+
+.carousel-indicators li{
+    width: 8px;
+    height: 2px;
+    opacity: 0.9;
+}
+
+ .carousel .active {
+    background-color: rgb(22, 22, 241)!important;
 }
 
 /* Weather */
@@ -564,6 +602,27 @@ footer{
         font-size: 1.5vw;
     }
 
+    /* Events */
+
+    .carousel-caption h3{
+        font-size: 1em;
+    }
+
+    .carousel-caption p {
+        font-weight: 500;
+        font-size: 0.8em;
+    }
+
+    .carousel-dark .carousel-indicators li{
+        border: 2px solid #fff;
+    }
+
+    .carousel-indicators li{
+        width: 20px;
+        height: 5px;
+        
+    }
+
     /* Weather */
     #rain-icon{
         margin-top: auto;
@@ -636,6 +695,25 @@ footer{
 
     #home-content p {
         margin-bottom: 50px;
+    }
+
+    /* Events */
+    .carousel-caption h3{
+        font-size: 1.2em;
+    }
+
+    .carousel-caption p {
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+
+    .carousel-dark .carousel-indicators li{
+        border: 2px solid #fff;
+    }
+
+    .carousel-indicators li{
+        width: 30px;
+        height: 5px;
     }
 
     /* Weather */
