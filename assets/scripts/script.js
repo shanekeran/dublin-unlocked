@@ -19,7 +19,6 @@ $( document ).ready(function() {
         $("#attractions-image").toggleClass("attractions-image-night attractions-image-day");
         $("#events-image").toggleClass("events-image-night events-image-day");
         $("#weather-image").toggleClass("weather-image-night weather-image-day");
-        $("#hotels-image").toggleClass("hotels-image-night hotels-image-day");
         $(".section-title").toggleClass("section-title-night");
         // Toggle Navbar font colour 
         $(".nav-link").toggleClass("white-font");

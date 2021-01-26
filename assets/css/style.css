@@ -365,27 +365,6 @@ nav a {
     text-decoration: underline;
 }
 
-
-
-/* Hotels */
-
-#hotels-image{
-    position: relative;
-    background-attachment: fixed; /* Code from w3schools. Source: https://www.w3schools.com/howto/howto_css_parallax.asp */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 40vh;
-}
-
-.hotels-image-day{
-    background-image: url("https://i.imgur.com/o0zyuEk.jpg");
-}
-.hotels-image-night{
-    background-image: url("https://i.imgur.com/OuR1vyK.jpg");
-}
-
 /* Gallery */
 
 hr{
@@ -521,7 +500,7 @@ footer{
     }
 
     /* Attractions */
-    #attractions-title h1, #weather-title h1, #events-title h1, #hotels-title h1 {
+    #attractions-title h1, #weather-title h1, #events-title h1 {
         font-size: 4vw;
     }
 
@@ -618,10 +597,6 @@ footer{
     }
 
     /* Events */
-
-    /*#event-container{
-        height: 50vh;
-    } */
 
     .event-image{
         max-height: 45vh;
