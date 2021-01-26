@@ -1,3 +1,5 @@
+//-------------- Dark / Light mode ------------------ \\
+
 var blackLogo = "assets/images/nav-logo.png";
 var whiteLogo = "assets/images/nav-logo-night.png";
 
@@ -32,7 +34,7 @@ $( document ).ready(function() {
     }); 
 });
 
-// Weather API
+//-------------- Weather API ------------------ \\
 var request = new XMLHttpRequest()
 
 request.open('GET', 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?aggregateHours=24&combinationMethod=aggregate&contentType=json&unitGroup=metric&locationMode=single&key=8KVKK772DZ7G34C7C4PNPX5LQ&dataElements=default&locations=Dublin%2CIE', true)
@@ -77,7 +79,7 @@ console.log(error);
 // Send request
 request.send()
 
-// Event API
+//-------------- Event API ------------------ \\
 
 var request = new XMLHttpRequest()
 
@@ -92,15 +94,15 @@ request.onload = function () {
 
     for (var i = 0; i < 6; i++) {
         var eventData = ticketMaster._embedded.events[i];
-        var eventGallery;
         var eventTitle = $(".event-name")[i];
         var venue = $(".venue")[i];
         var eventDate = $(".event-date")[i];
-        var eventImage;
+        var dateFinder = new Date(eventData.dates.start.localDate);
+        var dateFormat =  dateFinder.getDate()+"/"+(dateFinder.getMonth()+1)+"/"+dateFinder.getFullYear();
         
         $(eventTitle).html(eventData.name);
         $(venue).html(eventData._embedded.venues[0].name);
-        $(eventDate).html(eventData.dates.start.localDate);
+        $(eventDate).html(dateFormat);
         //for loop iterates through the first 8 images of an event and sets the first image with a width of 1000px+ and a ratio of 16:9.
          for (var j = 0; j < 8; j++) {
             var eventGallery = eventData.images[j];
