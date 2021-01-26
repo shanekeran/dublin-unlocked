@@ -101,11 +101,11 @@ request.onload = function () {
         $(eventTitle).html(eventData.name);
         $(venue).html(eventData._embedded.venues[0].name);
         $(eventDate).html(eventData.dates.start.localDate);
-        //for loop iterates through the first 6 images of an event and sets the first image with a width of 1000px or more.
-         for (var j = 0; j < 6; j++) {
+        //for loop iterates through the first 8 images of an event and sets the first image with a width of 1000px+ and a ratio of 16:9.
+         for (var j = 0; j < 8; j++) {
             var eventGallery = eventData.images[j];
             var eventImage = $(".event-image")[i];
-            if(eventGallery.width > 1000){
+            if((eventGallery.width > 1000) && (eventGallery.ratio = "16_9")){
                 $(eventImage).attr("src", eventGallery.url);
                 break;
             } else { // If there are no high quality images then the Dublin unlocked logo is displayed.
