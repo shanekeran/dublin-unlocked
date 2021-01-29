@@ -2,6 +2,7 @@
 //-------------- Google Maps API ------------------ \\
 
 let map;
+var activeMarkers = [];
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -22,24 +23,40 @@ function initMap() {
             content: property.content
         });
 
+        activeMarkers.push(marker);
+
         marker.addListener("click",function(){
             infoWindow.open(map,marker);
         });
+        
     }//function add marker ends here
+
+    // Clears all active markers
+    function clearMarkers() {
+        for (let i = 0; i < activeMarkers.length; i++) {
+                activeMarkers[i].setMap(null);
+            }
+            activeMarkers = [];
+        }
+
 
     // Button click functions to show markers
     $("#map-button1").on("click", function(){
-                showMarkers(restaurantMarkers)
-            });
+        clearMarkers();
+        showMarkers(restaurantMarkers)
+    });
     $("#map-button2").on("click",function(){
+        clearMarkers();
         showMarkers(parksMarkers)
     })
 
     $("#map-button3").on("click",function(){
+        clearMarkers();
         showMarkers(theatreMarkers)
     })
 
     $("#map-button4").on("click",function(){
+        clearMarkers();
         showMarkers(placeMarkers)
     })
 
@@ -49,9 +66,12 @@ function initMap() {
                     }
     }
 
+    
+
 } // init map ends here
 
 // Map Markers for day activities
+var allMarkers = [restaurantMarkers, parksMarkers, theatreMarkers, placeMarkers];
 var restaurantMarkers = [
     {
         location: {lat:53.35441990342235,lng:-6.263952129450252},
