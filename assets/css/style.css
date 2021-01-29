@@ -232,7 +232,7 @@ nav a {
     font-size: 0.9em;
 }
 
-.fa-utensils, .fa-tree, .fa-map-pin, .fa-theater-masks {
+#icon1, #icon2, #icon3, #icon4 {
     text-align: center;
     font-size: 10vw;
     margin-bottom: 5px;
@@ -525,7 +525,7 @@ footer{
         font-size: 4vw;
     }
 
-    .fa-utensils, .fa-tree, .fa-map-pin, .fa-theater-masks{
+    #icon1, #icon2, #icon3, #icon4{
         font-size: 6vw;
     }
 

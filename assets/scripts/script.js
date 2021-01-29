@@ -9,27 +9,51 @@ $( document ).ready(function() {
         $("#splash-page").hide();
         $("#main-content").css("display","block");
     }); 
+
+    // Changes made on "click" of the Night and Day buttons.
     $("#time-button").on("click", function(){
+
+        // Change text and colour of time button
         $("#time-button").toggleClass("day-button night-button");
         $("#button-text").text($("#button-text").text() == "Night" ? "Day":"Night");
+
         // Background colour toggle
         $("body").toggleClass("night-bg day-bg");
+
         // Image changes Day / Night toggle
         $("#home-image").toggleClass("home-image-night home-image-day");
         $("#attractions-image").toggleClass("attractions-image-night attractions-image-day");
         $("#events-image").toggleClass("events-image-night events-image-day");
         $("#weather-image").toggleClass("weather-image-night weather-image-day");
         $(".section-title").toggleClass("section-title-night");
+
         // Toggle Navbar font colour 
         $(".nav-link").toggleClass("white-font");
         $(".navbar-toggler").toggleClass("white-font");
         $(".navbar-toggler").toggleClass("white-border");
+
         // Navbar logo toggle (code learned on stackoverflow [https://stackoverflow.com/questions/19057513/toggling-an-image-src-with-jquery] )
         if($("#nav-logo").attr("src") === blackLogo){
-            $("#nav-logo").attr("src", whiteLogo);
+            $("#nav-logo").attr("src", whiteLogo)
             }else {
                 $("#nav-logo").attr("src", blackLogo)
             };
+        
+        //Changes button options in the Attractions settings
+        if($("#map-button1").html()===("Takeaways")){
+            $("#map-button1").html("Restaurants")
+            $("#map-button2").html("Parks")
+            $("#map-button3").html("Theatres")
+        } else {
+            $("#map-button1").html("Takeaways")
+            $("#map-button2").html("Pubs")
+            $("#map-button3").html("Nightclubs")
+        };
+
+        //Changes Attraction button icons
+        $("#icon1").toggleClass("fa-hamburger fa-utensils");
+        $("#icon2").toggleClass("fa-beer fa-tree");
+        $("#icon3").toggleClass("fa-music fa-film");
     }); 
 });
 
