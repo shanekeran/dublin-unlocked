@@ -1,3 +1,4 @@
+
 //-------------- Google Maps API ------------------ \\
 
 let map;
@@ -8,7 +9,49 @@ function initMap() {
     zoom: 11,
   });
 
-// Map Markers for Restaurants
+  // Add marker function
+
+    function addMarker(property){
+        var marker = new google.maps.Marker({
+            position: property.location,
+            map:map,
+        })
+            // Add Info window
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: property.content
+        });
+
+        marker.addListener("click",function(){
+            infoWindow.open(map,marker);
+        });
+    }//function add marker ends here
+
+    // Button click functions to show markers
+    $("#map-button1").on("click", function(){
+                showMarkers(restaurantMarkers)
+            });
+    $("#map-button2").on("click",function(){
+        showMarkers(parksMarkers)
+    })
+
+    $("#map-button3").on("click",function(){
+        showMarkers(theatreMarkers)
+    })
+
+    $("#map-button4").on("click",function(){
+        showMarkers(placeMarkers)
+    })
+
+    function showMarkers(markers){
+        for(var i = 0; i < markers.length; i++) {
+                        addMarker(markers[i]);
+                    }
+    }
+
+} // init map ends here
+
+// Map Markers for day activities
 var restaurantMarkers = [
     {
         location: {lat:53.35441990342235,lng:-6.263952129450252},
@@ -42,7 +85,7 @@ var restaurantMarkers = [
         location: {lat:53.33156818578229,lng:-6.25158695818032},
         content: "<h4>The Sussex Restaurant</h4>"
     }
-];
+]
 
 var parksMarkers = [
     {   
@@ -183,26 +226,84 @@ var theatreMarkers = [
     }
 ]
 
-// Add marker function
-
-    function addMarker(property){
-        var marker = new google.maps.Marker({
-            position: property.location,
-            map:map,
-        })
-            // Add Info window
-
-        var infoWindow = new google.maps.InfoWindow({
-            content: property.content
-        });
-
-        marker.addListener("click",function(){
-            infoWindow.open(map,marker);
-        });
-}
-
-// Loop for adding markers of restaurants
-    for(var i = 0; i < restaurantMarkers.length; i++) {
-         addMarker(restaurantMarkers[i]);
+// Map markers for night activities
+var takeawayMarkers = [
+        {   
+        location: {lat:53.34733697075942,lng:-6.26049272396139},
+        content: "<h4>Apache Pizza</h4>"
+    },
+       {   
+        location: {lat:53.35027326583911,lng:-6.260940745901634},
+        content: "<h4>McDonald's</h4>"
+    },
+       {   
+        location: {lat:53.34430514712553,lng:6.24925063100184},
+        content: "<h4>Camile Thai</h4>"
+    },
+       {   
+        location: {lat:53.343401756735155,lng:-6.281471915144254},
+        content: "<h4>Morelli's Take-Away</h4>"
+    },
+       {   
+        location: {lat:53.353989066499864,lng:-6.258395874737682},
+        content: "<h4>Turkish Kebab House</h4>"
     }
-}
+]
+
+var pubMarkers = [
+    {   
+        location: {lat:53.34548057827882,lng:-6.26415886437266},
+        content: "<h4>The Temple Bar</h4>"
+    },
+    {   
+        location: {lat:53.352475001610486,lng:-6.260873326377316},
+        content: "<h4>Murray's Pub</h4>"
+    },
+    {   
+        location: {lat:53.3401397985097,lng:-6.261556905432879},
+        content: "<h4>Sinnotts Bar</h4>"
+    },
+    {   
+        location: {lat:53.34493748406489,lng:-6.2763063372478305},
+        content: "<h4>The Brazen Head</h4>"
+    },
+    {   
+        location: {lat:53.34343420722004,lng:-6.259659596893519},
+        content: "<h4>O'Donoghue's Bar</h4>"
+    },
+    {   
+        location: {lat:53.34510403588452,lng:-6.267380278263293},
+        content: "<h4>Porterhouse</h4>"
+    },
+    {   
+        location: {lat:53.345572458250594,lng:-6.265117197286319},
+        content: "<h4>Fitzsimons</h4>"
+    },
+    {   
+        location: {lat:53.35658901024224,lng:-6.27383148096128},
+        content: "<h4>McGowans</h4>"
+    }
+] 
+
+var clubMarkers = [
+       {   
+        location: {lat:53.33782964345892,lng:-6.252707575105134},
+        content: "<h4>Xico</h4>"
+    },
+     {   
+        location: {lat:53.335878563814866,lng:-6.263534179338474},
+        content: "<h4>Dicey's</h4>"
+    },
+     {   
+        location: {lat:53.344839566775626,lng:-6.262187946334563},
+        content: "<h4>Club M</h4>"
+    },
+     {   
+        location: {lat:53.344839566775626,lng:-6.262187946334563},
+        content: "<h4>Tramline</h4>"
+    },
+     {   
+        location: {lat:53.34666494427766,lng:-6.279729689875963},
+        content: "<h4>Index</h4>"
+    },
+]
