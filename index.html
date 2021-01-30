@@ -58,7 +58,8 @@
                 </div>
             </nav>
         </header>
-        <section id="home"> <!-- Home -->
+        <!-- Home -->
+        <section id="home"> 
             <div id="home-image" class="home-image-day">
                 <div id="time-select">
                     <p>Experience Dublin by:</p>
@@ -94,7 +95,8 @@
                 </div>
             </div>
         </section>
-        <section id="attractions"> <!-- Attractions -->
+        <!-- Attractions -->
+        <section id="attractions"> 
             <div id="attractions-image" class="attractions-image-day">
                 <div class="section-title">
                     <h1>Attractions</h1>
@@ -104,35 +106,42 @@
                 <div class="row">
                     <div class="col-12 col-md-6" id="map-btn-container"> <!-- Map Buttons -->
                         <div class="row"> <!-- Buttons Row 1 -->
-                            <div class="col-6 map-buttons">
-                                <i class="fa fa-utensils" id="icon1"></i> <br>
-                                <button type="button" name="map-button1" id="map-button1">Restaurant</button>
+                            <div class="col-12 col-md-6 map-buttons">
+                                <button type="button" name="map-button1" id="map-button1"> 
+                                    <i class="fa fa-utensils" id="icon1"></i> 
+                                    <span id="map-span-1">Restaurant</span>
+                                </button>
                             </div>
-                            <div class="col-6 map-buttons">
-                                <i class="fas fa-tree" id="icon2"></i> <br>
-                                <button type="button" name="map-button2" id="map-button2">Parks</button>
+                            <div class="col-12 col-md-6 map-buttons">
+                                <button type="button" name="map-button2" id="map-button2">
+                                    <i class="fas fa-tree" id="icon2"></i>
+                                    <span id="map-span-2">Parks</span>
+                                </button>
                             </div>
                         </div>
                         <div class="row"> <!-- Buttons Row 2 -->
-                            <div class="col-6 map-buttons">
-                                <i class="fas fa-film" id="icon3"></i> <br>
-                                <button type="button" name="map-button3" id="map-button3">Theatres</button>
+                            <div class="col-12 col-md-6 map-buttons">
+                                <button type="button" name="map-button3" id="map-button3">
+                                    <i class="fas fa-film" id="icon3"></i>
+                                    <span id="map-span-3">Theatres</span>
+                                    </button>
                             </div>
-                            <div class="col-6 map-buttons">
-                                <i class="fas fa-map-pin" id="icon4"></i> <br>
-                                <button type="button" name="map-button4" id="map-button4">Places of interest</button>
+                            <div class="col-12 col-md-6 map-buttons">
+                                <button type="button" name="map-button4" id="map-button4">
+                                    <i class="fas fa-map-pin" id="icon4"></i>
+                                    <span id="map-span-4">Attractions</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6" id="map-container">
-                        <div id="map"> <!-- Google Maps API -->
-                            Maps API
-                        </div>
+                        <div id="map"></div> <!-- Google Maps API -->
                     </div>
                 </div>
             </div>    
         </section>
-        <section id="events"> <!-- Events -->
+        <!-- Events -->
+        <section id="events"> 
             <div id="events-image" class="events-image-day">
                 <div class="section-title">
                     <h1>Events</h1>
@@ -240,6 +249,7 @@
                 </div>    
             </div>
         </section>
+        <!-- Weather -->
         <section id="weather">
             <div id="weather-image" class="weather-image-day">
                 <div class="section-title">
@@ -312,6 +322,7 @@
                 </div>
             </div>
         </section>
+        <!-- Gallery -->
         <hr>
         <div class="container-fluid" id="gallery-container">
             <div id="gallery">
@@ -340,6 +351,7 @@
             </div>
         </div>
         <hr>
+        <!-- Contact -->
         <section id="contact">
             <div id="contact-container">
                 <h1> Contact Us</h1>
@@ -352,13 +364,14 @@
                 </form>
             </div>
         </section>
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-12" id="footer-content">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram"></i>
+                       <a href="https://www.facebook.com/people/Shane-Keran/100011246438616"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/shanek195/?hl=en"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -372,7 +385,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- js-cookie CDN-->
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <!-- External Javascript -->
+    <!-- External Javascript files -->
     <script src="assets/scripts/cookies.js" text="text/javascript"></script>
     <script src="assets/scripts/script.js" type="text/javascript"></script>
     <script src="assets/scripts/maps.js" type="text/javascript"></script>
