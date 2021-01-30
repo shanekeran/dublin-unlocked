@@ -40,14 +40,14 @@ $( document ).ready(function() {
             };
         
         //Changes button options in the Attractions settings
-        if($("#map-button1").html()===("Takeaways")){
-            $("#map-button1").html("Restaurants")
-            $("#map-button2").html("Parks")
-            $("#map-button3").html("Theatres")
+        if($("#map-span-1").html()===("Takeaways")){
+            $("#map-span-1").html("Restaurants")
+            $("#map-span-2").html("Parks")
+            $("#map-span-3").html("Theatres")
         } else {
-            $("#map-button1").html("Takeaways")
-            $("#map-button2").html("Pubs")
-            $("#map-button3").html("Nightclubs")
+            $("#map-span-1").html("Takeaways")
+            $("#map-span-2").html("Pubs")
+            $("#map-span-3").html("Nightclubs")
         };
 
         //Changes Attraction button icons
@@ -96,7 +96,7 @@ if (request.status >= 200 && request.status < 400) {
         }
   } 
 } else{
-console.log(error);
+console.log("error");
 }
 }
 // Send request
@@ -140,7 +140,7 @@ request.onload = function () {
     }// end of for loop
 
   } else {
-console.log(error);
+console.log("error");
 };
 }
 // Send request
