@@ -86,11 +86,12 @@ if (request.status >= 200 && request.status < 400) {
         // Display weather icon depending on the current condition forecasted.
         if(forecast.conditions === "Rain"){
             $(iconElement).attr("src","assets/images/weather/rain.png");
-        }else if((forecast.conditions === "Rain, Overcast")||(forecast.conditions === "Rain, Partially cloudy")) {
+        }else if(forecast.conditions === ("Rain, Overcast")||("Rain, Partially cloudy")) {
             $(iconElement).attr("src","assets/images/weather/rain.png");
-        }
-        else if( (forecast.conditions === "Partially cloudy")||(forecast.conditions === "Overcast")){
+        } else if(forecast.conditions === ("Partially cloudy")||("Overcast")){
             $(iconElement).attr("src","assets/images/weather/cloudy.png");
+        } else if(forecast.conditions === ("Snow")||("Snow, Overcast")){
+            $(iconElement).attr("src","assets/images/weather/snow.png");
         } else {
             $(iconElement).attr("src","assets/images/weather/sunny.png");
         }
@@ -122,10 +123,12 @@ request.onload = function () {
         var eventDate = $(".event-date")[i];
         var dateFinder = new Date(eventData.dates.start.localDate);
         var dateFormat =  dateFinder.getDate()+"/"+(dateFinder.getMonth()+1)+"/"+dateFinder.getFullYear();
+        var eventUrl = $(".event-url")[i];
         
         $(eventTitle).html(eventData.name);
         $(venue).html(eventData._embedded.venues[0].name);
         $(eventDate).html(dateFormat);
+        $(eventUrl).attr("href",eventData.url);
         //for loop iterates through the first 8 images of an event and sets the first image with a width of 1000px+ and a ratio of 16:9.
          for (var j = 0; j < 8; j++) {
             var eventGallery = eventData.images[j];
