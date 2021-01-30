@@ -270,6 +270,7 @@ nav a {
     width: 80%;
     height: 35vh;
     max-height: 600px;
+    color: black;
 }
 
 /* Events */
@@ -288,7 +289,7 @@ nav a {
     background-image: url("https://i.imgur.com/5ERbBXu.jpg");
 }
 .events-image-night{
-    background-image: url("https://i.imgur.com/LmP5K62.jpg");
+    background-image: url("https://i.imgur.com/Yo9BN5c.jpg");
 }
 
 #event-container{
@@ -312,8 +313,13 @@ nav a {
     max-height: 24vh;
 }
 
+.carousel-inner{
+    background-color: #beebff;
+}
+
 .carousel-caption{
     background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
 }
 
 .carousel-caption h3{
@@ -341,6 +347,12 @@ nav a {
 
  .carousel .active {
     background-color: rgb(22, 22, 241)!important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    opacity: 1;
+    width: 5em;
+    height: 2em;
 }
 
 /* Weather */
@@ -377,7 +389,7 @@ nav a {
     font-size: 3vw;
 }
 
- .fa-cloud-showers-heavy {
+ .fa-umbrella {
         font-size: 12vw;
 }
 
@@ -388,7 +400,7 @@ nav a {
 
 #weather-api{
     text-align: center;
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 
 #forecast-row{
@@ -562,9 +574,13 @@ footer{
         font-size: 1em;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 5vw;
+    }
+
     /* Weather */
 
-    .fa-cloud-showers-heavy {
+    .fa-umbrella {
         font-size: 10vw;
     }
 
@@ -640,7 +656,27 @@ footer{
         font-size: 1.5vw;
     }
 
+    /* Attractions */
+
+    #attractions-content{
+        height: 55vh;
+    }
+
+    .content-row{
+        height: 100%;
+    }
+
+    #map{
+        width: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     /* Events */
+
+    #event-container{
+        height: 65vh;
+    }
 
     .event-image{
         max-height: 45vh;
@@ -648,6 +684,9 @@ footer{
 
     #event-container h2{
         font-size: 1.4em;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
     }
 
     .carousel-caption h3{
@@ -670,7 +709,12 @@ footer{
     }
 
     /* Weather */
-    #rain-icon{
+
+    #weather-container{
+        height:70vh;
+    }
+
+    #weather-content, #weather-api, #rain-icon{
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -770,8 +814,12 @@ footer{
         height: 5px;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 4em;
+    }
+
     /* Weather */
-    .fa-cloud-showers-heavy {
+    .fa-umbrella {
         font-size: 8vw;
     }
 
@@ -829,6 +877,27 @@ footer{
         font-size: 1.2vw;
     }
 
+   
+     /* Events */
+
+    #event-container{
+        height: 70vh;
+    }
+
+    .carousel-caption h3{
+        font-size: 1.5em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1em;
+    }
+
+    /* Weather */
+
+    .w-icon{
+        width: 8vw;
+    }
+
     /* Gallery */
     #gallery-container{
         height: 420px;
@@ -856,26 +925,6 @@ footer{
 
     #comment{
         width: 30vw;
-    }
-
-     /* Events */
-
-     /* #event-container{
-        height: 70vh;
-    } */
-
-    .carousel-caption h3{
-        font-size: 1.5em;
-    }
-
-    .carousel-caption p {
-        font-size: 1.1em;
-    }
-
-    /* Weather */
-
-    .w-icon{
-        width: 8vw;
     }
     
 }

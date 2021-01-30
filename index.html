@@ -103,13 +103,13 @@
                 </div>
             </div>
             <div class="container-fluid" id="attractions-content"> 
-                <div class="row">
+                <div class="row content-row">
                     <div class="col-12 col-md-6" id="map-btn-container"> <!-- Map Buttons -->
                         <div class="row"> <!-- Buttons Row 1 -->
                             <div class="col-12 col-md-6 map-buttons">
                                 <button type="button" name="map-button1" id="map-button1"> 
                                     <i class="fa fa-utensils" id="icon1"></i> 
-                                    <span id="map-span-1">Restaurant</span>
+                                    <span id="map-span-1">Restaurants</span>
                                 </button>
                             </div>
                             <div class="col-12 col-md-6 map-buttons">
@@ -148,105 +148,107 @@
                 </div>
             </div>
             <div class="container-fluid" id="event-container">
-                <h2>Upcoming Events in Dublin</h2>
-                <div class="container-fluid" id="event-api-container">
-                    <!-- Bootstrap Carousel for upcoming events-->
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <!-- Lower progress bar on carousel-->
-                        <ol class="carousel-indicators">
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
-                            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
-                        </ol>
-                        <!-- Slides -->
-                        <div class="carousel-inner">
-                            <!-- Event 1-->
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 1</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
+                <div class="row content-row">
+                    <h2>Upcoming Events in Dublin</h2>
+                    <div class="container-fluid" id="event-api-container">
+                        <!-- Bootstrap Carousel for upcoming events-->
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <!-- Lower progress bar on carousel-->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
+                            </ol>
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <!-- Event 1-->
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Event 2-->
+                                <div class="carousel-item" data-bs-interval="15000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 2</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Event 3-->
+                                <div class="carousel-item" data-bs-interval="15000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 3</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Event 4-->
+                                <div class="carousel-item" data-bs-interval="15000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 4</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Event 5-->
+                                <div class="carousel-item" data-bs-interval="15000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 5</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Event 6-->
+                                <div class="carousel-item" data-bs-interval="15000">
+                                    <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
+                                    <div class="carousel-caption d-md-block">
+                                        <h3 class="event-name">Event Name 6</h3>
+                                        <p>
+                                            Venue: <span class="venue"></span>. 
+                                            Date: <span class="event-date"></span>. 
+                                            <a href="#" class="event-url">Find out more!</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Event 2-->
-                            <div class="carousel-item" data-bs-interval="15000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 2</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Event 3-->
-                            <div class="carousel-item" data-bs-interval="15000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 3</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Event 4-->
-                            <div class="carousel-item" data-bs-interval="15000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 4</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Event 5-->
-                            <div class="carousel-item" data-bs-interval="15000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 5</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Event 6-->
-                            <div class="carousel-item" data-bs-interval="15000">
-                                <img src="assets/images/site-logo.png" class="d-block w-100 event-image" alt="event poster">
-                                <div class="carousel-caption d-md-block">
-                                    <h3 class="event-name">Event Name 6</h3>
-                                    <p>
-                                        Venue: <span class="venue"></span>. 
-                                        Date: <span class="event-date"></span>. 
-                                        <a href="#" class="event-url">Find out more!</a>
-                                    </p>
-                                </div>
-                            </div>
+                            <!-- Carousel controls-->
+                            <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
                         </div>
-                        <!-- Carousel controls-->
-                        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </a>
-                    </div>
-                </div>    
+                    </div> 
+                </div>   
             </div>
         </section>
         <!-- Weather -->
@@ -256,71 +258,75 @@
                     <h1>Weather</h1>
                 </div>
             </div>
-            <div class="container" id="weather-api">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row" id="forecast-row">
-                            <!-- Day One-->
-                            <div class="col-12 col-md-2 daily-forecast">
-                                <div class="row date">Date</div>
-                                <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
-                                <div class="row conditions">Conditions</div>
-                                <div class="row">Max Temp:<span class="max-temp"></span></div>
-                                <div class="row">Precipitation:<span class="precip"></span></div>    
-                            </div>
-                            <!-- Day Two-->
-                            <div class="col-6 col-md-2 daily-forecast">
-                                <div class="row date">Date</div>
-                                <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
-                                <div class="row conditions">Conditions</div>
-                                <div class="row">Max Temp:<span class="max-temp"></span></div>
-                                <div class="row">Precipitation:<span class="precip"></span></div>    
-                            </div>
-                            <!-- Day Three-->
-                            <div class="col-6 col-md-2 daily-forecast">
-                                <div class="row date">Date</div>
-                                <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
-                                <div class="row conditions">Conditions</div>
-                                <div class="row">Max Temp:<span class="max-temp"></span></div>
-                                <div class="row">Precipitation:<span class="precip"></span></div>    
-                            </div>
-                            <!-- Day Four-->
-                            <div class="col-6 col-md-2 daily-forecast">
-                                <div class="row date">Date</div>
-                                <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
-                                <div class="row conditions">Conditions</div>
-                                <div class="row">Max Temp:<span class="max-temp"></span></div>
-                                <div class="row">Precipitation:<span class="precip"></span></div>    
-                            </div>
-                            <!-- Day Five-->
-                            <div class="col-6 col-md-2 daily-forecast">
-                                <div class="row date">Date</div>
-                                <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
-                                <div class="row conditions">Conditions</div>
-                                <div class="row">Max Temp:<span class="max-temp"></span></div>
-                                <div class="row">Precipitation:<span class="precip"></span></div>    
+            <div class="container-fluid" id="weather-container">
+                <div class="row content-row">
+                    <div class="container" id="weather-api">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row" id="forecast-row">
+                                    <!-- Day One-->
+                                    <div class="col-12 col-md-2 daily-forecast">
+                                        <div class="row date">Date</div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
+                                        <div class="row conditions">Conditions</div>
+                                        <div class="row">Max Temp:<span class="max-temp"></span></div>
+                                        <div class="row">Precipitation:<span class="precip"></span></div>    
+                                    </div>
+                                    <!-- Day Two-->
+                                    <div class="col-6 col-md-2 daily-forecast">
+                                        <div class="row date">Date</div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
+                                        <div class="row conditions">Conditions</div>
+                                        <div class="row">Max Temp:<span class="max-temp"></span></div>
+                                        <div class="row">Precipitation:<span class="precip"></span></div>    
+                                    </div>
+                                    <!-- Day Three-->
+                                    <div class="col-6 col-md-2 daily-forecast">
+                                        <div class="row date">Date</div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
+                                        <div class="row conditions">Conditions</div>
+                                        <div class="row">Max Temp:<span class="max-temp"></span></div>
+                                        <div class="row">Precipitation:<span class="precip"></span></div>    
+                                    </div>
+                                    <!-- Day Four-->
+                                    <div class="col-6 col-md-2 daily-forecast">
+                                        <div class="row date">Date</div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
+                                        <div class="row conditions">Conditions</div>
+                                        <div class="row">Max Temp:<span class="max-temp"></span></div>
+                                        <div class="row">Precipitation:<span class="precip"></span></div>    
+                                    </div>
+                                    <!-- Day Five-->
+                                    <div class="col-6 col-md-2 daily-forecast">
+                                        <div class="row date">Date</div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon"></div>
+                                        <div class="row conditions">Conditions</div>
+                                        <div class="row">Max Temp:<span class="max-temp"></span></div>
+                                        <div class="row">Precipitation:<span class="precip"></span></div>    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container" id="weather-content">
-                <div class="row">
-                    <div class="col-12 col-md-6" id="rain-icon">
-                        <i class="fas fa-cloud-showers-heavy"></i> <br>
-                        <h1>Rainy day activities</h1>
+                    <div class="container" id="weather-content">
+                        <div class="row">
+                            <div class="col-12 col-md-6" id="rain-icon">
+                                <i class="fas fa-umbrella"></i> <br>
+                                <h1>Rainy day activities</h1>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>
+                                    Et harum quidem rerum facilis est et expedita distinctio. 
+                                    Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, 
+                                    facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. 
+                                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat…
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <p>
-                            Et harum quidem rerum facilis est et expedita distinctio. 
-                            Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, 
-                            facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
-                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. 
-                            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat…
-                        </p>
-                    </div>
-                </div>
-            </div>
+                </div>    
+            </div>   
         </section>
         <!-- Gallery -->
         <hr>
