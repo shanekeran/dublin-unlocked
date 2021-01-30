@@ -43,16 +43,34 @@ function initMap() {
     // Button click functions to show markers
     $("#map-button1").on("click", function(){
         clearMarkers();
-        showMarkers(restaurantMarkers)
+        if($("#map-span-1").html()==="Restaurants"){
+            showMarkers(restaurantMarkers)
+           map.setZoom(12)
+        } else{
+            showMarkers(takeawayMarkers)
+            map.setZoom(13)
+        }
     });
     $("#map-button2").on("click",function(){
         clearMarkers();
-        showMarkers(parksMarkers)
+        if($("#map-span-2").html()==="Parks"){
+            showMarkers(parksMarkers)
+           map.setZoom(11)
+        } else {
+            showMarkers(pubMarkers)
+           map.setZoom(13)
+        }
     })
 
     $("#map-button3").on("click",function(){
         clearMarkers();
-        showMarkers(theatreMarkers)
+        if($("#map-span-3").html()==="Theatres"){
+            showMarkers(theatreMarkers)
+            map.setZoom(13)
+        } else{
+            showMarkers(clubMarkers)
+            map.setZoom(13)
+        }
     })
 
     $("#map-button4").on("click",function(){
@@ -60,10 +78,12 @@ function initMap() {
         showMarkers(placeMarkers)
     })
 
+
     function showMarkers(markers){
         for(var i = 0; i < markers.length; i++) {
                         addMarker(markers[i]);
                     }
+        map.setCenter({lat: 53.350140, lng: -6.25972});
     }
 
     
@@ -71,7 +91,7 @@ function initMap() {
 } // init map ends here
 
 // Map Markers for day activities
-var allMarkers = [restaurantMarkers, parksMarkers, theatreMarkers, placeMarkers];
+//var allMarkers = [restaurantMarkers, parksMarkers, theatreMarkers, placeMarkers, pubMarkers, clubMarkers];
 var restaurantMarkers = [
     {
         location: {lat:53.35441990342235,lng:-6.263952129450252},
