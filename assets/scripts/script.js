@@ -84,17 +84,30 @@ if (request.status >= 200 && request.status < 400) {
         $(precipElement).html(forecast.precip+"mm"); // Adds daily precipitation level
 
         // Display weather icon depending on the current condition forecasted.
-        if(forecast.conditions === "Rain"){
-            $(iconElement).attr("src","assets/images/weather/rain.png");
-        }else if(forecast.conditions === ("Rain, Overcast")||("Rain, Partially cloudy")) {
-            $(iconElement).attr("src","assets/images/weather/rain.png");
-        } else if(forecast.conditions === ("Partially cloudy")||("Overcast")){
-            $(iconElement).attr("src","assets/images/weather/cloudy.png");
-        } else if(forecast.conditions === ("Snow")||("Snow, Overcast")){
-            $(iconElement).attr("src","assets/images/weather/snow.png");
-        } else {
-            $(iconElement).attr("src","assets/images/weather/sunny.png");
-        }
+
+        switch(forecast.conditions){
+            case "Rain":
+                $(iconElement).attr("src","assets/images/weather/rain.png");
+                break;
+            case "Rain, Overcast":
+                $(iconElement).attr("src","assets/images/weather/rain.png");
+                break;
+            case "Overcast":
+                $(iconElement).attr("src","assets/images/weather/cloudy.png");
+                break;
+            case "Partially cloudy":
+                $(iconElement).attr("src","assets/images/weather/cloudy.png");
+                break;
+            case "Sunny":
+                $(iconElement).attr("src","assets/images/weather/sunny.png");
+                break;
+            case "Snow":
+                $(iconElement).attr("src","assets/images/weather/snow.png");
+                break;
+            case "Snow, Overcast":
+                $(iconElement).attr("src","assets/images/weather/snow.png");
+                break;
+        } // End of Switch statement
   } 
 } else{
 console.log("error");
