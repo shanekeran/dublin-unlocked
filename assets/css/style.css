@@ -39,15 +39,15 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 70vw;
-    background-color: rgb(226, 169, 73); 
     font-size: 1.3em;
-    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px 20px;
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 6px #2a74b3;
+    border: none;
 }
 #enter-button:hover {
-    background-color: rgb(226, 169, 73);
-    border: 2.5px solid rgb(228, 228, 228);
+    box-shadow: 0px 2px #2a74b3;
 }
 
 /* Main Content - General */
@@ -63,7 +63,7 @@ body {
 }
 
 .white-font{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)!important;
 }
 
 .white-border{
@@ -249,16 +249,21 @@ nav a {
 .map-buttons button{
     padding: 10px 15px;
     font-size: 0.9em;
-    background-image: linear-gradient(90deg, #82cce8, #348bd6);
-    box-shadow: 1px 1px 2px #383737;
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 6px #2a74b3;
+    border: none;
     border-radius: 10px;
     width: 60vw;
+    outline: none;
 }
 
 .map-buttons button:hover,.map-buttons button:active {
-    box-shadow: 1px 1px 5px #000000;
-    border: 1.5px solid #ffff;
+    box-shadow: 0px 2px  #2a74b3;
     outline: none;
+}
+
+.map-buttons button:focus span{
+    color: white;
 }
 
 .map-buttons button span{
@@ -461,7 +466,7 @@ hr{
     
 }
 
-/* Form */
+/* Contact Us */
 
 #contact {
     text-align: center;
@@ -489,6 +494,19 @@ hr{
     width: 50vw;
 }
 
+#form-button{
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 4px #2a74b3;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+#form-button:hover, #form-button:active{
+    box-shadow: 0px 1px #2a74b3;
+}
+
 /* Footer */
 
 footer{
@@ -507,7 +525,7 @@ footer{
 
 #footer-content a {
     text-decoration: none;
-    color: #000000;
+    color:#1c82da;
 }
 
 
@@ -761,8 +779,17 @@ footer{
 
     /* Contact */
 
+    #contact{
+        height: 60vh;
+    }
+
     #fullname, #email, #comment{
         margin: 8px 0;
+    }
+
+    #form-button{
+        font-size: 1em;
+        width: 110px;
     }
 
     /* Footer */
@@ -770,6 +797,17 @@ footer{
     #footer-content{
         font-size: 2.3em;
     }
+
+    #fullname, #email {
+        width: 35vw;
+        height: 25px;
+    }
+
+    #comment{
+        width: 45vw;
+        height: 120px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -860,17 +898,31 @@ footer{
     }
 
     @keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 40%;}
-    100%{ right: 0%;}
+        0% { right: 0%;}
+        50%{ right : 40%;}
+        100%{ right: 0%;}
     } 
 
        @-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 40%;}
-    100%{ right: 0%;}
+        0% { right: 0%;}
+        50%{ right : 40%;}
+        100%{ right: 0%;}
     
-}
+    }
+
+    /* Footer */
+
+    #contact-container p{
+        font-size: 1.2em;
+    }
+
+    #fullname, #email {
+        height: 35px;
+    }
+
+    #comment{
+        height: 140px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -953,15 +1005,31 @@ footer{
         50%{ right : 35%;}
         100%{ right: 0%;}
     }
+    /* Contact Us */
 
+     #contact-container p{
+        font-size: 1.4em;
+    }
+    
     #fullname, #email{
-        width: 20vw;
+        width: 30vw;
+        font-size: 1.2em;
     }
 
     #comment{
-        width: 30vw;
+        width: 40vw;
+        height: 160px;
+        font-size: 1.2em;
+    }
+
+    #fullname, #email, #comment{
+        margin: 15px 0px;
     }
     
+    #form-button{
+        font-size: 1.2em;
+        width: 130px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1034,6 +1102,22 @@ footer{
         0% { right: 0%;}
         50%{ right : 28%;}
         100%{ right: 0%;}
+    }
+
+    /* Contact Us */
+
+     #contact-container h1{
+        font-size: 3.5em;
+        margin-bottom: 10px
+    }
+
+     #contact-container p{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    #fullname, #email, #comment{
+        margin: 15px 0px;
     }
 
     /* Footer */
