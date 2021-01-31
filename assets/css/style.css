@@ -231,11 +231,6 @@ nav a {
     margin-bottom: 30px;
 }
 
-#map-btn-container{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .map-buttons{
     text-align: center;
     padding: 5px;
@@ -308,8 +303,8 @@ nav a {
 }
 
 #event-container h2{
-    font-size: 0.8em;
-    padding-top: 2%;
+    font-size: 1em;
+    padding-top: 4%;
 }
 
 #event-api-container{
@@ -321,46 +316,23 @@ nav a {
     max-height: 24vh;
 }
 
-.carousel-item{
-    background-color: #beebff;
+.card{
+    margin: 15px 0px;
 }
 
-.carousel-caption{
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 20px;
+.carousel{
+    display: none;
 }
 
-.carousel-caption h3{
-    font-size: 0.7em;
+.card .event-name{
+    font-size: 1em;
+    padding: 0px 10px;
 }
 
-.carousel-caption p {
-    font-weight: 500;
-    font-size: 0.6em;
-}
-
-.carousel ol{
-    margin-bottom: 0.4rem;
-}
-
-.carousel-dark .carousel-indicators li{
-    border: 1px solid #fff;
-}
-
-.carousel-indicators li{
-    width: 8px;
-    height: 2px;
-    opacity: 0.9;
-}
-
- .carousel .active {
-    background-color: rgb(22, 22, 241)!important;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    opacity: 1;
-    width: 5em;
-    height: 2em;
+.card p{
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    padding: 0px 10px;
 }
 
 /* Weather */
@@ -583,17 +555,22 @@ footer{
 
     /* Events */
 
-    .event-image{
-        max-height: 36vh;
+    #event-container h2{
+        font-size: 1.4em;
     }
 
-    #event-container h2{
+    .card{
+        margin: 25px 0px;
+    }
+
+    .card .event-name{
+        font-size: 1.2em;
+    }
+
+    .card p{
         font-size: 1em;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        height: 5vw;
-    }
 
     /* Weather */
 
@@ -665,7 +642,11 @@ footer{
         font-size: 1.2em;
     }
 
-      #home-content h1, #weather-content h1{
+    #home-content{
+        height: 45vh;
+    }
+
+    #home-content h1, #weather-content h1{
         font-size: 2.2vw;
     }
 
@@ -707,6 +688,47 @@ footer{
 
     /* Events */
 
+    .carousel{
+        display: block;
+    }
+
+    .carousel-item{
+        background-color: #beebff;
+    }
+
+    .carousel-caption{
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 20px;
+    }
+
+    .carousel ol{
+        margin-bottom: 0.4rem;
+    }
+
+    .carousel-indicators li{
+        width: 20px;
+        height: 5px;
+        opacity: 0.9;
+    }
+
+    .carousel .active {
+        background-color: rgb(22, 22, 241)!important;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        opacity: 1;
+        width: 5em;
+        height: 5em;
+    }
+
+    .event-image{
+        max-height: 36vh;
+    }
+
+     #mobile-event-cards{
+        display:none;
+    }
+
     #event-container{
         height: 65vh;
     }
@@ -717,8 +739,6 @@ footer{
 
     #event-container h2{
         font-size: 1.4em;
-        margin-top: auto;
-        margin-bottom: auto;
         padding: 10px 0px;
     }
 
@@ -735,21 +755,11 @@ footer{
         border: 2px solid #fff;
     }
 
-    .carousel-indicators li{
-        width: 20px;
-        height: 5px;
-        
-    }
 
     /* Weather */
 
     #weather-container{
         height:70vh;
-    }
-
-    #weather-content, #weather-api, #rain-icon{
-        margin-top: auto;
-        margin-bottom: auto;
     }
 
     .w-icon{
@@ -838,6 +848,11 @@ footer{
     #home-image{
         height: 80vh;
     }
+
+    #home-content{
+        height: 55vh;
+    }
+
     #time-select{
         width: 300px;
     }
@@ -1055,6 +1070,10 @@ footer{
     #time-select{
         width: 400px;
         font-size: 1.5em;
+    }
+
+    #home-content{
+        height: 60vh;
     }
 
      #home-content h1, #weather-content h1{

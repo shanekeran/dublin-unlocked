@@ -70,8 +70,8 @@
             </div>
             <!-- History / What makes Dublin great-->
             <div class="container-fluid" id="home-content">
-                <div class="row g-0">
-                    <div class="col-12 col-md-6">
+                <div class="row g-0 content-row">
+                    <div class="col-12 col-md-6 my-auto">
                         <h1>History</h1>
                             <p> 
                                 Bacon ipsum dolor amet frankfurter beef ribs shankle capicola picanha prosciutto meatloaf turkey, chicken shank pork short loin pork belly salami. 
@@ -82,7 +82,7 @@
                                 Pork ribeye cupim turkey picanha.
                             </p>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 my-auto">
                         <h1>What makes Dublin great</h1>
                         <p>
                             Jowl reprehenderit sed proident id aute quis shoulder ut. 
@@ -104,7 +104,7 @@
             </div>
             <div class="container-fluid" id="attractions-content"> 
                 <div class="row g-0 content-row">
-                    <div class="col-12 col-md-6" id="map-btn-container"> <!-- Map Buttons -->
+                    <div class="col-12 col-md-6 my-auto"> <!-- Map Buttons -->
                         <div class="row" id="button-row">
                             <div class="col-12 col-md-6 map-buttons"> <!-- Button 1-->
                                 <button type="button" name="map-button1" id="map-button1"> 
@@ -150,7 +150,7 @@
             </div>
             <div class="container-fluid" id="event-container">
                 <div class="row g-0 content-row">
-                    <h2>Upcoming Events in Dublin</h2>
+                    <h2 class="my-auto">Upcoming Events in Dublin</h2>
                     <div class="container-fluid" id="event-api-container">
                         <!-- Bootstrap Carousel for upcoming events-->
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -248,6 +248,83 @@
                                 <span class="visually-hidden">Next</span>
                             </a>
                         </div>
+                        <!-- Event cards for small screens-->
+                        <div class="container">
+                            <div class="col-10 mx-auto" id="mobile-event-cards">
+                                <!-- Event 1-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                                <!--Event 2-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                                <!--Event 3-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                                <!--Event 4-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                                <!--Event 5-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                                <!--Event 6-->
+                                <div class="card">
+                                    <img class="card-img-top event-image" src="#" alt="event image">
+                                    <p class="card-block">
+                                        <h3 class="event-name">Event Name 1</h3>
+                                            <p>
+                                                Venue: <span class="venue"></span>. <br>
+                                                Date: <span class="event-date"></span>. <br>
+                                                <a href="#" class="event-url">Find out more!</a>
+                                            </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div> 
                 </div>   
             </div>
@@ -261,7 +338,7 @@
             </div>
             <div class="container-fluid" id="weather-container">
                 <div class="row g-0 content-row">
-                    <div class="container" id="weather-api">
+                    <div class="container my-auto" id="weather-api">
                         <div class="row">
                             <div class="col-12">
                                 <div class="row" id="forecast-row">
@@ -309,9 +386,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container" id="weather-content">
+                    <div class="container my-auto" id="weather-content">
                         <div class="row">
-                            <div class="col-12 col-md-6" id="rain-icon">
+                            <div class="col-12 col-md-6 my-auto" id="rain-icon">
                                 <i class="fas fa-umbrella"></i> <br>
                                 <h1>Rainy day activities</h1>
                             </div>

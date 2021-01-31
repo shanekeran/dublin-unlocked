@@ -129,7 +129,7 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     console.log("Success");
 
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 12; i++) {
         var eventData = ticketMaster._embedded.events[i];
         var eventTitle = $(".event-name")[i];
         var venue = $(".venue")[i];
