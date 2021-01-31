@@ -53,7 +53,7 @@ body {
 /* Main Content - General */
 
 .day-bg{
-    background-color: #e2e2e2fc;
+    background-color: #ececec;
     color: #2d2d2d;
 }
 
@@ -236,6 +236,10 @@ nav a {
     padding: 5px;
 }
 
+#button-container{
+    height: auto; /*delete*/
+}
+
 #button-row{
     justify-content: center;
     max-height: 600px;
@@ -277,11 +281,13 @@ nav a {
     display: flex;
     justify-content: center;
     margin: 30px 0px 40px 0px;
+    height: 40vh;
 }
 
 #map{
     width: 80%;
-    height: 35vh;
+   /* height: 35vh;*/
+    height: 100%;
     max-height: 600px;
     color: black;
 }
@@ -310,10 +316,6 @@ nav a {
 #event-api-container{
     height: auto;
     max-width: 1100px;
-}
-
-.event-image{
-    max-height: 24vh;
 }
 
 .event-card{
@@ -469,10 +471,6 @@ hr{
     display: flex;
 }
 
-#contact-container{
-    margin: auto;
-}
-
 #fullname, #email, #comment {
     border: 1px solid #333333;
     margin: 5px 0px;
@@ -568,10 +566,16 @@ footer{
     }
 
     #home-content p, #weather-content p{
-        font-size: 2vw;
+        font-size: 0.85em;
     }
 
     /* Attractions */
+
+    #map-container{
+        height: 35vh;
+        min-height: 300px;
+    }
+
     #attractions-title h1, #weather-title h1, #events-title h1 {
         font-size: 4vw;
     }
@@ -659,6 +663,12 @@ footer{
     overflow: initial; /*remove scroll bar*/
 }
 
+    /* Main Content - General */
+
+    .section-title h1{
+        font-size: 6vw;
+    }
+
     /*Home page*/
     #time-select{
         width: 30vw;
@@ -666,7 +676,7 @@ footer{
     }
 
     #home-content{
-        height: 45vh;
+        height: 40vw;
     }
 
     #home-content h1, #weather-content h1{
@@ -680,15 +690,11 @@ footer{
     /* Attractions */
 
     #attractions-content{
-        height: 55vh;
+        height: 45vw;
     }
 
     .content-row{
         height: 100%;
-    }
-
-    #button-row{
-        height: 35vh;
     }
 
     .map-buttons, .map-buttons button{
@@ -705,84 +711,17 @@ footer{
 
     #map{
         width: 90%;
+    }
+
+    #map-container{
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    /* Events */
-
-    .carousel{
-        display: block;
-    }
-
-    .carousel-item{
-        background-color: #beebff;
-    }
-
-    .carousel-caption{
-        background-color: rgba(255, 255, 255, 0.75);
-        border-radius: 20px;
-    }
-
-    .carousel ol{
-        margin-bottom: 0.4rem;
-    }
-
-    .carousel-indicators li{
-        width: 20px;
-        height: 5px;
-        opacity: 0.9;
-    }
-
-    .carousel .active {
-        background-color: rgb(22, 22, 241)!important;
-    }
-
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        opacity: 1;
-        width: 5em;
-        height: 5em;
-    }
-
-    .event-image{
-        max-height: 36vh;
-    }
-
-     #mobile-event-cards{
-        display:none;
-    }
-
-    #event-container{
-        height: 65vh;
-    }
-
-    .event-image{
-        max-height: 45vh;
-    }
-
-    #event-container h2{
-        font-size: 1.4em;
-        padding: 10px 0px;
-    }
-
-    .carousel-caption h3{
-        font-size: 1em;
-    }
-
-    .carousel-caption p {
-        font-weight: 500;
-        font-size: 0.8em;
-    }
-
-    .carousel-dark .carousel-indicators li{
-        border: 2px solid #fff;
-    }
-
-
     /* Weather */
 
     #weather-container{
-        height:70vh;
+        height: 65vw;
     }
 
     .w-icon{
@@ -817,7 +756,7 @@ footer{
     /* Contact */
 
     #contact{
-        height: 60vh;
+        height: 45vw;
     }
 
     #fullname, #email, #comment{
@@ -877,7 +816,7 @@ footer{
     }
 
     #home-content{
-        height: 55vh;
+        height: 40vw;
     }
 
     #time-select{
@@ -890,18 +829,60 @@ footer{
 
     /* Attractions */
 
+    #attractions-content{
+        height: 40vw;
+    }
+
     .map-buttons button{
         width: 30vw;
     }
 
     /* Events */
 
-    .event-image{
-        max-height: 55vh;
+    .carousel{
+        display: block;
+    }
+
+    .carousel-item{
+        background-color: #beebff;
+    }
+
+    .carousel-caption{
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 20px;
+    }
+
+    .carousel ol{
+        margin-bottom: 0.4rem;
+    }
+
+    .carousel-indicators li{
+        width: 30px;
+        height: 5px;
+        opacity: 0.9;
+    }
+
+    .carousel .active {
+        background-color: rgb(22, 22, 241)!important;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        opacity: 1;
+        width: 5em;
+        height: 4em;
+    }
+
+     #mobile-event-cards{
+        display:none;
+    }
+
+    #event-container{
+        height: 55vw;
     }
 
     #event-container h2{
         font-size: 1.8em;
+        padding: 10px 0px;
     }
 
     .carousel-caption h3{
@@ -909,6 +890,7 @@ footer{
     }
 
     .carousel-caption p {
+        font-weight: 500;
         font-size: 0.9em;
     }
 
@@ -916,16 +898,15 @@ footer{
         border: 2px solid #fff;
     }
 
-    .carousel-indicators li{
-        width: 30px;
-        height: 5px;
-    }
-
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        height: 4em;
+    .event-image{
+        max-height: 40vw;
     }
 
     /* Weather */
+
+    #weather-container{
+        height: 55vw;
+    }
 
     .figures{
     font-size: 1em;
@@ -959,7 +940,11 @@ footer{
 
     /* Footer */
 
-    #contact-container p{
+    #contact {
+        height: 50vw;
+    }
+
+    #contact p{
         font-size: 1.2em;
     }
 
@@ -1008,10 +993,16 @@ footer{
         font-size: 1.2vw;
     }
 
+    /* Attractions */
+
+    #button-row{
+        height: 30vh;
+    }
+
      /* Events */
 
     #event-container{
-        height: 70vh;
+        height: 55vw;
     }
 
     #event-container h2 {
@@ -1027,6 +1018,10 @@ footer{
     }
 
     /* Weather */
+
+    #weather-container{
+        height: 40vw;
+    }
 
     .w-icon{
         width: 8vw;
@@ -1054,7 +1049,7 @@ footer{
     }
     /* Contact Us */
 
-     #contact-container p{
+     #contact p{
         font-size: 1.4em;
     }
     
@@ -1116,10 +1111,16 @@ footer{
         font-size: 1.3em;
     }
 
+    /* Attractions */
+
+    #map-container{
+        height: 45vh;
+    }
+
     /* Events */
 
-    .event-image{
-        max-height: 65vh;
+    #event-container{
+        height: 50vw;
     }
 
      #event-container h2{
@@ -1137,7 +1138,11 @@ footer{
     /* Weather */
 
     .figures{
-    font-size: 1.2em;
+        font-size: 1.2em;
+    }
+
+    #weather-container{
+        height: 45vw;
     }
 
     /* Gallery */
@@ -1163,12 +1168,16 @@ footer{
 
     /* Contact Us */
 
-     #contact-container h1{
+     #contact {
+        height: 40vw;
+     }
+
+     #contact h1{
         font-size: 3.5em;
         margin-bottom: 10px
     }
 
-     #contact-container p{
+     #contact p{
         font-size: 1.5em;
         margin-bottom: 20px;
     }
