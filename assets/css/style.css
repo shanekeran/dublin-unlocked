@@ -142,6 +142,8 @@ nav a {
 .navbar-collapse{
     max-height: 60vh;
     overflow: overlay;
+    justify-content: center;
+    margin-right: 7vw; /* to get the true center (nav logo is 7vw width)*/
 }
 
 /* Home Section */
@@ -316,6 +318,7 @@ nav a {
 #event-api-container{
     height: auto;
     max-width: 1100px;
+    color: black;
 }
 
 .event-card{
@@ -338,6 +341,10 @@ nav a {
     margin-bottom: 5px;
     font-size: 0.9em;
     padding: 0px 10px;
+}
+
+.event-url{
+    text-decoration: none;
 }
 
 /* Weather */
@@ -469,6 +476,17 @@ hr{
     text-align: center;
     height: 50vh;
     display: flex;
+    flex-direction: column;
+}
+
+#back-top{
+    text-align: center;
+    font-size: 1em;
+}
+
+#back-top a{
+    color: #2d2d2d;
+    text-decoration: none;
 }
 
 #fullname, #email, #comment {
@@ -518,7 +536,7 @@ footer{
 
 #footer-content a {
     text-decoration: none;
-    color:#1c82da;
+    color:#2d2d2d;
 }
 
 
@@ -630,12 +648,18 @@ footer{
         100%{ right: 0%;}
     }
 
+    /* Contact */
+
     #fullname, #email{
         width: 30vw;
     }
 
     #comment{
         width: 40vw;
+    }
+
+    #back-top{
+        font-size: 1.2em;
     }
 
 }
@@ -837,6 +861,10 @@ footer{
         width: 30vw;
     }
 
+    #button-row{
+        height: 30vh;
+    }
+
     /* Events */
 
     .carousel{
@@ -863,13 +891,27 @@ footer{
     }
 
     .carousel .active {
-        background-color: rgb(22, 22, 241)!important;
+        background-color: rgb(255, 255, 255)!important;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon{
+        background-image: url("../images/arrow-prev.png");
+        filter: none;
+    }
+
+    .carousel-control-prev-icon{
+        background-image: url("../images/arrow-next.png");
     }
 
     .carousel-control-prev-icon, .carousel-control-next-icon{
         opacity: 1;
-        width: 5em;
-        height: 4em;
+        width: 3em;
+        height: 3em;
+        filter: none;
     }
 
      #mobile-event-cards{
@@ -955,6 +997,10 @@ footer{
     #comment{
         height: 140px;
     }
+
+    #back-top{
+        font-size: 1.3em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -984,6 +1030,10 @@ footer{
         font-size: 5vw;
     }
 
+    #attractions-image, #events-image, #weather-image{
+        height: 30vh;
+    }
+
     /* Home page */
      #home-content h1, #weather-content h1{
         font-size: 2vw;
@@ -991,12 +1041,6 @@ footer{
 
     #home-content p, #weather-content p{
         font-size: 1.2vw;
-    }
-
-    /* Attractions */
-
-    #button-row{
-        height: 30vh;
     }
 
      /* Events */
@@ -1084,10 +1128,6 @@ footer{
     }
 
     /* Main content - General */
-
-    #attractions-image, #events-image, #weather-image{
-        height: 50vh;
-    }
 
     .section-title h1{
         font-size: 4vw;
