@@ -316,20 +316,23 @@ nav a {
     max-height: 24vh;
 }
 
-.card{
+.event-card{
     margin: 15px 0px;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 .carousel{
     display: none;
 }
 
-.card .event-name{
+.event-card .event-name{
     font-size: 1em;
     padding: 0px 10px;
 }
 
-.card p{
+.event-card p{
     margin-bottom: 5px;
     font-size: 0.9em;
     padding: 0px 10px;
@@ -377,9 +380,12 @@ nav a {
     justify-content: center;
 }
 
+.second-row{
+    margin-top: 30px;
+}
+
 .daily-forecast div{
     justify-content: center;
-    font-size: 0.9em;
 }
 
 .daily-forecast div img{
@@ -387,7 +393,24 @@ nav a {
 }
 
 .date{
-    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.conditions{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.figures{
+    font-size: 0.8em;
+}
+
+.fa-thermometer-three-quarters{
+    color: rgb(224, 73, 18);
+}
+
+.fa-tint{
+    color: rgb(24, 99, 185);
 }
 
 /* Gallery */
@@ -559,15 +582,15 @@ footer{
         font-size: 1.4em;
     }
 
-    .card{
+    .event-card{
         margin: 25px 0px;
     }
 
-    .card .event-name{
+    .event-card .event-name{
         font-size: 1.2em;
     }
 
-    .card p{
+    .event-card p{
         font-size: 1em;
     }
 
@@ -766,6 +789,10 @@ footer{
         width: 10vw;
     }
 
+    .second-row{
+        margin-top: 0px; /*Forecast is now on 1 row so margin not needed*/
+    }
+
     /* Gallery */
     #gallery-container{
         height: 340px;
@@ -899,6 +926,11 @@ footer{
     }
 
     /* Weather */
+
+    .figures{
+    font-size: 1em;
+    }
+
     .fa-umbrella {
         font-size: 8vw;
     }
@@ -1100,6 +1132,12 @@ footer{
 
     .carousel-caption p {
         font-size: 1.4em;
+    }
+
+    /* Weather */
+
+    .figures{
+    font-size: 1.2em;
     }
 
     /* Gallery */
