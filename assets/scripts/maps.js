@@ -69,13 +69,14 @@ function initMap() {
             map.setZoom(13)
         } else{
             showMarkers(clubMarkers)
-            map.setZoom(13)
+            map.setZoom(12)
         }
     })
 
     $("#map-button4").on("click",function(){
         clearMarkers();
         showMarkers(placeMarkers)
+        map.setZoom(12)
     })
 
 
