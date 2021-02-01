@@ -479,7 +479,7 @@ hr{
 
 #contact {
     text-align: center;
-    height: 45vw;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
