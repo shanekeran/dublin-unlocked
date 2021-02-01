@@ -53,8 +53,8 @@ body {
 /* Main Content - General */
 
 .day-bg{
-    background-color: #ececec;
-    color: #2d2d2d;
+    background-image: linear-gradient(80deg, #fff, #eaf4f9);
+    color: #202020;
 }
 
 .night-bg{
@@ -203,7 +203,7 @@ nav a {
 }
 
 #home-content{
-    padding: 2vh 0
+    padding: 2vh 2vw;
 }
 
 #home h1 {
@@ -479,7 +479,7 @@ hr{
 
 #contact {
     text-align: center;
-    height: 50vh;
+    height: 45vw;
     display: flex;
     flex-direction: column;
 }
@@ -487,6 +487,7 @@ hr{
 #back-top{
     text-align: center;
     font-size: 1em;
+    margin-top: 15px;
 }
 
 #back-top a{
@@ -784,10 +785,6 @@ footer{
 
     /* Contact */
 
-    #contact{
-        height: 45vw;
-    }
-
     #fullname, #email, #comment{
         margin: 8px 0;
     }
@@ -849,7 +846,7 @@ footer{
     }
 
     #home-content{
-        padding: 2.5vh 0;
+        padding: 2.5vh 2.5vw;
     }
 
     #home-content p, #home-content li{
@@ -1038,7 +1035,7 @@ footer{
     /* Home page */
 
     #home-content{
-        padding: 3vh 0;
+        padding: 3vh 3vw;
     }
 
      #home-content h1, #weather-content h1{
@@ -1122,6 +1119,10 @@ footer{
         font-size: 1.2em;
         width: 130px;
     }
+
+    #back-top{
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1140,7 +1141,7 @@ footer{
     }
 
     .content-row{
-        padding: 0 8vw;
+        padding: 0 4vw;
     }
 
      /*Home page*/
