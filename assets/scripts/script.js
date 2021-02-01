@@ -123,7 +123,20 @@ if (request.status >= 200 && request.status < 400) {
         } // End of Switch statement
   } 
 } else{
-console.log("error");
+console.log("Weather API failed to load");
+    for (var i = 0; i < 5;i++) {
+        var conditionsElement = $(".conditions")[i];
+        var forecastShow= $(".daily-forecast")[3];
+        // Display error message
+        $(conditionsElement).html("Weather Forecast Unavailable. Please try again later.");
+        // Hide forecasts
+        $(".daily-forecast").hide();
+        // Show the centre forecast only
+        $(forecastShow).show();
+        // Hide weather information template
+        $(".date").hide();
+        $(".figures").hide();
+    }
 }
 }
 // Send request
@@ -169,7 +182,11 @@ request.onload = function () {
     }// end of for loop
 
   } else {
-console.log("error");
+    console.log("Event API failed to load");
+    for (var i = 0; i < 12; i++) {
+        $("#event-api-container").children().hide();
+        $("#event-api-container").html("<p>Event information currently unavailable. Please try again later to discover exciting events!.</p>");
+    }
 };
 }
 // Send request
