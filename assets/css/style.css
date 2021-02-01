@@ -143,6 +143,11 @@ nav a {
     color: rgb(0, 0, 0);
 }
 
+nav a:hover{
+    color:#479bda;
+    font-weight: 500;
+}
+
 .navbar-toggler {
     border: 2px solid rgb(0, 0, 0);
     font-size: 5vw;
@@ -204,7 +209,12 @@ nav a {
 }
 
 #time-button:hover {
-    border-width: 3px;
+    border-color: #479bda;
+    box-shadow: 0px 2px rgb(61, 61, 61);
+}
+
+#time-button:focus{
+    outline: none;
 }
 
 .night-button{
@@ -220,7 +230,7 @@ nav a {
 }
 
 #home-content{
-    padding: 2vh 2vw;
+    padding: 2vh 4vw;
 }
 
 #home h1 {
@@ -589,6 +599,10 @@ footer{
         width: 47vw;
     }
 
+    #splash-button{
+        top:0%;
+    }
+
     #enter-button{
         width: 60vw;
         font-size: 1.2em;
@@ -743,7 +757,7 @@ footer{
     }
 
     #home-content{
-        height: auto; /*was 65vw*/
+        height: auto; 
     }
 
     #home-content h1, #weather-content h1{
@@ -850,9 +864,17 @@ footer{
 }
 
 @media only screen and (min-width: 992px) {
+
+    /* Splash Page */
+
     #site-logo{
         width: 34vw;
     }
+
+    #splash-button{
+        top: 10%;
+    }
+
      #enter-button{
         width: 45vw;
         font-size: 1.3em;
@@ -946,7 +968,7 @@ footer{
         width: 3em;
         height: 3em;
         -webkit-filter: none;
-                filter: none;
+                filter: drop-shadow(2px 2px 2px black)!important;
     }
 
      #mobile-event-cards{
