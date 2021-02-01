@@ -1,6 +1,3 @@
-// Sets the cookie with an expiration date of 30days
-Cookies.set("returning", "true", {expires: 30});
-
 // If the cookie is found, the user will bypass the splash page and continue to the main site
 var cookie = Cookies.get("returning");
 if(cookie){
@@ -9,3 +6,7 @@ if(cookie){
 } else{
     console.log("Splash page displayed as no 'returning' cookie found.")
 }
+
+// Sets the cookie with an expiration date of 30days
+Cookies.set("returning", "true", {expires: 30});
+
