@@ -170,16 +170,15 @@ nav a {
     left: 25%;
     width: 55vw;
     height: auto;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
-    font-size: 1em;
     text-align: center;
 }
 
 #home-image p {
-    margin: 0px;
-    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+    border-bottom: 1.5px solid white;
+    filter: drop-shadow(1px 1px 2px black);
+    color: rgb(255, 255, 255);
 }
 
 #time-button {
@@ -188,22 +187,19 @@ nav a {
 }
 
 #time-button:hover {
-    border: 2px solid red;
-}
-
-#time-button:active {
-    box-shadow: 0 2px rgb(22, 22, 22);  /* code for button style was taken from w3schools. source = "https://www.w3schools.com/css/css3_buttons.asp" */
-    transform: translateY(4px);
+    border-width: 3px;
 }
 
 .night-button{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    border: 2px outset #fff;
 }
 
 .day-button {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    border: 2px outset #000000;
 }
 
 #home h1 {
@@ -891,7 +887,7 @@ footer{
     }
 
     .carousel .active {
-        background-color: rgb(255, 255, 255)!important;
+        background-color: rgb(190, 190, 190)!important;
     }
 
     .carousel-control-prev, .carousel-control-next{
