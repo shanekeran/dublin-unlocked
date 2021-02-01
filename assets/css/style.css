@@ -23,37 +23,48 @@ body {
 #site-logo{
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 70vw;
 }
 
 #splash-button {
     position: relative;
     top: 20%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin: 0px 15px;
 }
 
 #enter-button {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 70vw;
     font-size: 1.3em;
     border-radius: 10px;
     padding: 10px 20px;
-    background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    box-shadow: 0px 6px #2a74b3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
+        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    -webkit-box-shadow: 0px 6px #2a74b3;
+            box-shadow: 0px 6px #2a74b3;
     border: none;
 }
 #enter-button:hover {
-    box-shadow: 0px 2px #2a74b3;
+    -webkit-box-shadow: 0px 2px #2a74b3;
+            box-shadow: 0px 2px #2a74b3;
 }
 
 /* Main Content - General */
 
 .day-bg{
-    background-image: linear-gradient(80deg, #fff, #eaf4f9);
+    background-image: -o-linear-gradient(10deg, #fff, #eaf4f9);
+        background-image: linear-gradient(80deg, #fff, #eaf4f9);
     color: #202020;
 }
 
@@ -84,7 +95,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     width: fit-content;
     background-color: #f7f7f7fc;
     border: 3px solid rgb(0, 0, 0);
@@ -136,13 +149,15 @@ nav a {
 }
 .navbar-toggler:focus{
     border-width: 3px;
-    box-shadow: 0 0 0 0; /*overriding bootstrap default*/
+    -webkit-box-shadow: 0 0 0 0; /*overriding bootstrap default*/
+        box-shadow: 0 0 0 0; 
 }
 
 .navbar-collapse{
     max-height: 60vh;
     overflow: overlay;
-    justify-content: center;
+    -webkit-box-pack: center;
+        justify-content: center;
     margin-right: 7vw; /* to get the true center (nav logo is 7vw width)*/
 }
 
@@ -177,13 +192,15 @@ nav a {
 #home-image p {
     margin-bottom: 12px;
     border-bottom: 1.5px solid white;
-    filter: drop-shadow(1px 1px 2px black);
+    -webkit-filter: drop-shadow(1px 1px 2px black);
+            filter: drop-shadow(1px 1px 2px black);
     color: rgb(255, 255, 255);
 }
 
 #time-button {
     padding: 5px 15px;
-    box-shadow: 0 4px rgb(61, 61, 61);
+    -webkit-box-shadow: 0 4px rgb(61, 61, 61);
+            box-shadow: 0 4px rgb(61, 61, 61);
 }
 
 #time-button:hover {
@@ -248,15 +265,19 @@ nav a {
 }
 
 #button-row{
-    justify-content: center;
+    -webkit-box-pack: center;
+        justify-content: center;
     max-height: 600px;
 }
 
 .map-buttons button{
     padding: 10px 15px;
     font-size: 0.9em;
-    background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    box-shadow: 0px 6px #2a74b3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
+        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    -webkit-box-shadow: 0px 6px #2a74b3;
+            box-shadow: 0px 6px #2a74b3;
     border: none;
     border-radius: 10px;
     width: 60vw;
@@ -264,7 +285,8 @@ nav a {
 }
 
 .map-buttons button:hover,.map-buttons button:active {
-    box-shadow: 0px 2px  #2a74b3;
+    -webkit-box-shadow: 0px 2px  #2a74b3;
+            box-shadow: 0px 2px  #2a74b3;
     outline: none;
 }
 
@@ -286,7 +308,8 @@ nav a {
 
 #map-container{
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        justify-content: center;
     margin: 30px 0px 40px 0px;
     height: 40vh;
 }
@@ -329,7 +352,8 @@ nav a {
 .event-card{
     margin: 15px 0px;
     border: none;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
@@ -383,6 +407,7 @@ nav a {
 .w-icon {
     width: 16vw;
     height: auto;
+    max-height: 80px; 
 }
 
 #weather-api{
@@ -391,7 +416,8 @@ nav a {
 }
 
 #forecast-row{
-    justify-content: center;
+    -webkit-box-pack: center;
+        justify-content: center;
 }
 
 .second-row{
@@ -399,7 +425,8 @@ nav a {
 }
 
 .daily-forecast div{
-    justify-content: center;
+    -webkit-box-pack: center;
+        justify-content: center;
 }
 
 .daily-forecast div img{
@@ -444,16 +471,15 @@ hr{
 #gallery{
     position: relative;
     width: max-content;
+    display: inline-block;
 }
 
 .gallery-row{
+    display: block;
     position: relative;
     animation:linear infinite;
     animation-name: scroll;
-    animation-duration: 20s;
-    -webkit-animation:linear infinite;
-    -webkit-animation-name: scroll;
-    -webkit-animation-duration: 80s;
+    animation-duration: 80s;
 }
 
 #gallery img{
@@ -480,8 +506,13 @@ hr{
 #contact {
     text-align: center;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #back-top{
@@ -512,8 +543,11 @@ hr{
 }
 
 #form-button{
-    background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    box-shadow: 0px 4px #2a74b3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
+        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    -webkit-box-shadow: 0px 4px #2a74b3;
+            box-shadow: 0px 4px #2a74b3;
     border-radius: 5px;
     border: none;
     font-size: 0.9em;
@@ -521,7 +555,8 @@ hr{
 }
 
 #form-button:hover, #form-button:active{
-    box-shadow: 0px 1px #2a74b3;
+    -webkit-box-shadow: 0px 1px #2a74b3;
+            box-shadow: 0px 1px #2a74b3;
 }
 
 /* Footer */
@@ -576,7 +611,9 @@ footer{
     /*Home page*/
     #time-select{
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         width: 35vw;
         font-size: 1.1em
     }
@@ -898,7 +935,6 @@ footer{
 
     .carousel-control-prev-icon{
         background-image: url("../images/arrow-prev.png");
-        filter: none;
     }
 
     .carousel-control-next-icon{
@@ -909,7 +945,8 @@ footer{
         opacity: 1;
         width: 3em;
         height: 3em;
-        filter: none;
+        -webkit-filter: none;
+                filter: none;
     }
 
      #mobile-event-cards{
@@ -1072,6 +1109,7 @@ footer{
 
     .w-icon{
         width: 8vw;
+        max-height: 132px;
     }
 
     /* Gallery */
