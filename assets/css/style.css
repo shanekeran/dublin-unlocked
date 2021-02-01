@@ -202,16 +202,25 @@ nav a {
     border: 2px outset #000000;
 }
 
+#home-content{
+    padding: 2vh 0
+}
+
 #home h1 {
     text-align: center;
-    font-size: 5vw;
+    font-size: 0.9em;
     margin: 15px 0px;
 }
 
-#home-content p{
+#home-content p, #home-content li{
     padding: 0px 20px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 0.75em;
+}
+
+#home-content li{
+    padding: 1vh 0;
+    list-style-type: square;
 }
 
 /* Attractions */
@@ -576,11 +585,11 @@ footer{
     }
 
     #home-content h1, #weather-content h1{
-        font-size: 3vw;
+        font-size: 1em;
     }
 
-    #home-content p, #weather-content p{
-        font-size: 0.85em;
+    #home-content p, #home-content li, #weather-content p{
+        font-size: 0.8em;
     }
 
     /* Attractions */
@@ -696,15 +705,15 @@ footer{
     }
 
     #home-content{
-        height: 40vw;
+        height: auto; /*was 65vw*/
     }
 
     #home-content h1, #weather-content h1{
-        font-size: 2.2vw;
+        font-size: 1.1em;
     }
 
-    #home-content p, #weather-content p{
-        font-size: 1.5vw;
+    #home-content p, #home-content li, #weather-content p{
+        font-size: 0.85em;
     }
 
     /* Attractions */
@@ -835,16 +844,16 @@ footer{
         height: 80vh;
     }
 
-    #home-content{
-        height: 40vw;
-    }
-
     #time-select{
         width: 300px;
     }
 
-    #home-content p {
-        margin-bottom: 50px;
+    #home-content{
+        padding: 2.5vh 0;
+    }
+
+    #home-content p, #home-content li{
+        font-size: 0.88em;
     }
 
     /* Attractions */
@@ -1031,12 +1040,17 @@ footer{
     }
 
     /* Home page */
-     #home-content h1, #weather-content h1{
-        font-size: 2vw;
+
+    #home-content{
+        padding: 3vh 0;
     }
 
-    #home-content p, #weather-content p{
-        font-size: 1.2vw;
+     #home-content h1, #weather-content h1{
+        font-size: 1.4em;
+    }
+
+    #home-content p, #home-content li, #weather-content p{
+        font-size: 1em;
     }
 
      /* Events */
@@ -1129,22 +1143,22 @@ footer{
         font-size: 4vw;
     }
 
+    .content-row{
+        padding: 0 8vw;
+    }
+
      /*Home page*/
     #time-select{
         width: 400px;
         font-size: 1.5em;
     }
 
-    #home-content{
-        height: 60vh;
-    }
-
      #home-content h1, #weather-content h1{
-        font-size: 2.2em;
+        font-size: 1.5em;
     }
 
-    #home-content p, #weather-content p{
-        font-size: 1.3em;
+    #home-content p, #home-content li, #weather-content p{
+        font-size: 1.1em;
     }
 
     /* Attractions */
