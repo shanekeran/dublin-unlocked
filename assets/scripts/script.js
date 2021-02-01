@@ -17,6 +17,9 @@ $( document ).ready(function() {
         $("#time-button").toggleClass("day-button night-button");
         $("#button-text").text($("#button-text").text() == "Night" ? "Day":"Night");
 
+        // Toggles icon in time button
+        $("#time-button").children(".fas").toggleClass("fa-moon fa-cloud-sun");
+
         // Background colour toggle
         $("body").toggleClass("night-bg day-bg");
 
@@ -54,6 +57,11 @@ $( document ).ready(function() {
         $("#icon1").toggleClass("fa-hamburger fa-utensils");
         $("#icon2").toggleClass("fa-beer fa-tree");
         $("#icon3").toggleClass("fa-music fa-film");
+
+        // Changes text colour for Back to top link and Social media icons
+        $("#back-top").children().toggleClass("white-font");
+        $("#footer-content").children("a").toggleClass("white-font");
+
     }); 
 });
 
@@ -92,6 +100,9 @@ if (request.status >= 200 && request.status < 400) {
             case "Rain, Overcast":
                 $(iconElement).attr("src","assets/images/weather/rain.png");
                 break;
+            case "Rain, Partially cloudy":
+                $(iconElement).attr("src","assets/images/weather/rain.png");
+                break;
             case "Overcast":
                 $(iconElement).attr("src","assets/images/weather/cloudy.png");
                 break;
@@ -107,6 +118,8 @@ if (request.status >= 200 && request.status < 400) {
             case "Snow, Overcast":
                 $(iconElement).attr("src","assets/images/weather/snow.png");
                 break;
+            default:
+                $(iconElement).attr("src","assets/images/weather/sunny.png");
         } // End of Switch statement
   } 
 } else{
