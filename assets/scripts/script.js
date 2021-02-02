@@ -1,9 +1,10 @@
 //-------------- Dark / Light mode ------------------ \\
 
-var blackLogo = "assets/images/nav-logo.png";
-var whiteLogo = "assets/images/nav-logo-night.png";
-
 $( document ).ready(function() {
+
+    const blackLogo = "assets/images/nav-logo.png";
+    const whiteLogo = "assets/images/nav-logo-night.png";
+
     // On click of the enter button it will hide splash page and show the main content.
     $("#enter-button").on("click", function() {
         $("#splash-page").hide();
@@ -76,15 +77,15 @@ request.onload = function () {
 
 if (request.status >= 200 && request.status < 400) {
     console.log("Success")
-    for (var i = 0; i < 5;i++) {
-        var forecast = weatherData.location.values[i];
-        var epochDate = new Date(forecast.datetime); // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
-        var date =  epochDate.getDate()+"/"+(epochDate.getMonth()+1)+"/"+epochDate.getFullYear(); // converts epoch date to dd/mm/yyyy  // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
-        var dateElement = $(".date")[i];
-        var iconElement = $(".w-icon")[i];
+    for (let i = 0; i < 5;i++) {
+        const forecast = weatherData.location.values[i];
+        const epochDate = new Date(forecast.datetime); // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
+        const date =  epochDate.getDate()+"/"+(epochDate.getMonth()+1)+"/"+epochDate.getFullYear(); // converts epoch date to dd/mm/yyyy  // code source: https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time
+        const dateElement = $(".date")[i];
+        const iconElement = $(".w-icon")[i];
         var conditionsElement = $(".conditions")[i];
-        var tempElement = $(".max-temp")[i]; 
-        var precipElement = $(".precip")[i];
+        const tempElement = $(".max-temp")[i]; 
+        const precipElement = $(".precip")[i];
 
         $(dateElement).html(date); // Adds each date above forecast
         $(conditionsElement).html(forecast.conditions); // Adds daily forecasted conditions
@@ -124,9 +125,9 @@ if (request.status >= 200 && request.status < 400) {
   } 
 } else{
 console.log("Weather API failed to load");
-    for (var i = 0; i < 5;i++) {
+    for (let i = 0; i < 5;i++) {
         var conditionsElement = $(".conditions")[i];
-        var forecastShow= $(".daily-forecast")[3];
+        const forecastShow= $(".daily-forecast")[3];
         // Display error message
         $(conditionsElement).html("Weather Forecast Unavailable. Please try again later.");
         // Hide forecasts
@@ -155,23 +156,23 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     console.log("Success");
 
-    for (var i = 0; i < 12; i++) {
-        var eventData = ticketMaster._embedded.events[i];
-        var eventTitle = $(".event-name")[i];
-        var venue = $(".venue")[i];
-        var eventDate = $(".event-date")[i];
-        var dateFinder = new Date(eventData.dates.start.localDate);
-        var dateFormat =  dateFinder.getDate()+"/"+(dateFinder.getMonth()+1)+"/"+dateFinder.getFullYear();
-        var eventUrl = $(".event-url")[i];
+    for (let i = 0; i < 12; i++) {
+        const eventData = ticketMaster._embedded.events[i];
+        const eventTitle = $(".event-name")[i];
+        const venue = $(".venue")[i];
+        const eventDate = $(".event-date")[i];
+        const dateFinder = new Date(eventData.dates.start.localDate);
+        const dateFormat =  dateFinder.getDate()+"/"+(dateFinder.getMonth()+1)+"/"+dateFinder.getFullYear();
+        const eventUrl = $(".event-url")[i];
         
         $(eventTitle).html(eventData.name);
         $(venue).html(eventData._embedded.venues[0].name);
         $(eventDate).html(dateFormat);
         $(eventUrl).attr("href",eventData.url);
         //for loop iterates through the first 8 images of an event and sets the first image with a width of 1000px+ and a ratio of 16:9.
-         for (var j = 0; j < 8; j++) {
-            var eventGallery = eventData.images[j];
-            var eventImage = $(".event-image")[i];
+         for (let j = 0; j < 8; j++) {
+            const eventGallery = eventData.images[j];
+            const eventImage = $(".event-image")[i];
             if((eventGallery.width > 1000) && (eventGallery.ratio = "16_9")){
                 $(eventImage).attr("src", eventGallery.url);
                 break;
@@ -183,7 +184,7 @@ request.onload = function () {
 
   } else {
     console.log("Event API failed to load");
-    for (var i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
         $("#event-api-container").children().hide();
         $("#event-api-container").html("<p>Event information currently unavailable. Please try again later to discover exciting events!.</p>");
     }
