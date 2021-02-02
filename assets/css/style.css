@@ -3,6 +3,14 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, #home-image p, .map-buttons, #form-button{
+    font-family: "Raleway", sans-serif;
+}
+
+p,li, .daily-forecast, #back-top, #enter-button{
+    font-family: "Open Sans", sans-serif;
+}
+
 /*---------------- Splash Page ---------------*/
 
 #splash-page {
@@ -102,7 +110,7 @@ body {
             transform: translateX(-50%) translateY(-50%);
     width: fit-content;
     background-color: #f7f7f7fc;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px 0px;
     color: #000000;
 }
@@ -141,12 +149,13 @@ nav img {
 }
 
 nav a {
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
 nav a:hover{
-    color:#479bda;
+    color: #0f81d2!important;
     font-weight: 500;
 }
 
@@ -211,7 +220,7 @@ nav a:hover{
 }
 
 #time-button:hover {
-    border-color: #479bda;
+    border-color: #0f81d2;
     box-shadow: 0px 2px rgb(61, 61, 61);
 }
 
@@ -270,12 +279,14 @@ nav a:hover{
 .map-buttons{
     text-align: center;
     padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #button-row{
     -webkit-box-pack: center;
         justify-content: center;
-    max-height: 600px;
+    max-height: 400px;
 }
 
 .map-buttons button{
@@ -320,6 +331,7 @@ nav a:hover{
         justify-content: center;
     margin: 30px 0px 40px 0px;
     height: 40vh;
+    max-height: 400px;
 }
 
 #map{
@@ -328,6 +340,7 @@ nav a:hover{
     height: 100%;
     max-height: 600px;
     color: black;
+    border: 5px outset lightgrey;
 }
 
 /*------------------- Events ------------------*/
@@ -374,10 +387,19 @@ nav a:hover{
     padding: 0px 10px;
 }
 
+.event-card h3{
+    font-weight: 600;
+}
+
 .event-card p{
     margin-bottom: 5px;
     font-size: 0.9em;
     padding: 0px 10px;
+    font-weight: 600;
+}
+
+.event-card span{
+    font-weight: 400;
 }
 
 .event-url{
@@ -397,7 +419,7 @@ nav a:hover{
     text-align: center;
 }
 
-#weather-content h1 {
+#weather-content h2 {
     text-align: center;
     font-size: 5vw;
     margin: 15px 0px;
@@ -523,6 +545,11 @@ hr{
             flex-direction: column;
 }
 
+#contact h1{
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+}
+
 #back-top{
     text-align: center;
     font-size: 1em;
@@ -532,6 +559,10 @@ hr{
 #back-top a{
     color: #2d2d2d;
     text-decoration: none;
+}
+
+#back-top a:hover{
+    color: #0f81d2!important;
 }
 
 #fullname, #email, #comment {
@@ -588,6 +619,11 @@ footer{
     color:#2d2d2d;
 }
 
+#footer-content a:hover{
+    color: #0f81d2!important;
+
+}
+
 
 /*-------------- Media Queries ----------------*/
 
@@ -606,7 +642,7 @@ footer{
     font-size: 1.2em;
 }
 
-/*--------- Navbar ------------*/
+/* Navbar */
 .navbar-nav{
     font-size: 1.3em;
 }
@@ -615,7 +651,7 @@ nav img {
     width: 15vw;
 }
 
-/*-------- Main Content - General ---------*/
+/* Main Content - General */
 #attractions-image, #events-image, #weather-image{
     height: 40vh;
 }
@@ -624,7 +660,7 @@ nav img {
     font-size: 4vw;
 }
 
-#home-content h1, #weather-content h1{
+#home-content h1, #weather-content h2{
     font-size: 1em;
 }
 
@@ -632,7 +668,7 @@ nav img {
     font-size: 0.8em;
 }
 
-/*----------Home page------------*/
+/*Home page*/
 #time-select{
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -653,7 +689,7 @@ nav img {
     min-height: 300px;
 }
 
-    /* Events */
+/* Events */
 
 #event-container h2{
     font-size: 1.4em;
@@ -705,6 +741,10 @@ nav img {
 }
 
 /* Contact */
+
+#contact h1{
+    font-size: 1.7em;
+}
 
 #fullname, #email{
     width: 30vw;
@@ -763,7 +803,7 @@ nav img {
     height: auto; 
 }
 
-#home-content h1, #weather-content h1{
+#home-content h1, #weather-content h2{
     font-size: 1.1em;
 }
 
@@ -838,6 +878,10 @@ nav img {
 }
 
 /* Contact */
+
+#contact h1{
+    font-size: 1.8em;
+}
 
 #fullname, #email, #comment{
     margin: 8px 0;
@@ -922,12 +966,16 @@ nav img {
     height: 40vw;
 }
 
+#map-container{
+    height: 30vw;
+}
+
 .map-buttons button{
     width: 30vw;
 }
 
 #button-row{
-    height: 30vh;
+    height: 30vW;
 }
 
 /* Events */
@@ -990,11 +1038,16 @@ nav img {
 
 .carousel-caption h3{
     font-size: 1.2em;
+    font-weight: 600;
 }
 
 .carousel-caption p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9em;
+}
+
+.carousel span{
+    font-weight: 400;
 }
 
 .carousel-dark .carousel-indicators li{
@@ -1041,10 +1094,14 @@ nav img {
     100%{ right: 0%;}
 }
 
-/* Footer */
+/* Contact */
 
 #contact {
     height: 50vw;
+}
+
+#contact h1{
+    font-size: 2em;
 }
 
 #contact p{
@@ -1103,7 +1160,7 @@ nav img {
     padding: 3vh 3vw;
 }
 
-#home-content h1, #weather-content h1{
+#home-content h1, #weather-content h2{
     font-size: 1.4em;
 }
 
@@ -1164,6 +1221,10 @@ nav img {
 }
 /* Contact Us */
 
+#contact h1{
+    font-size: 2.1em;
+}
+
 #contact p{
     font-size: 1.4em;
 }
@@ -1223,7 +1284,7 @@ nav img {
     font-size: 1.5em;
 }
 
-#home-content h1, #weather-content h1{
+#home-content h1, #weather-content h2{
     font-size: 1.5em;
 }
 
@@ -1294,8 +1355,8 @@ nav img {
 }
 
 #contact h1{
-    font-size: 3.5em;
-    margin-bottom: 10px
+    font-size: 2.8em;
+    margin-bottom: 2vh;
 }
 
 #contact p{

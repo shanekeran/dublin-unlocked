@@ -8,28 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- Email Js -->
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
+        function initMap() {} // helps resolve issue with google maps api not loading sometimes.
         (function() {
         emailjs.init("user_JjDbjyafqspKbeOgfUbmT");
         })();
     </script>
 </head>
 <body class="day-bg">
-    <div id="splash-page">
+    <!-- Splash Page for first time visitors -->
+    <div id="splash-page" style="display: none;">
         <div id="splash-bg-image"></div>
         <img src="assets/images/site-logo.png" alt="Dublin unlocked logo" id="site-logo">
         <div id="splash-button">
             <button type="button" name="enter-button" id="enter-button">Click here for the key to the city.</button>
         </div>
     </div>
-
-    <div id="main-content" style="display: none;"> <!-- Inline style is to prevent this content from showing before external CSS file loads-->
+    <!-- Main Content revealed after Splash page-->
+    <div id="main-content"> <!-- Inline style is to prevent this content from showing before external CSS file loads-->
+        <!-- Navbar -->
         <header>
-            <!-- Navbar -->
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid" id="nav-container">
                     <!-- Nav Logo -->
@@ -124,30 +129,35 @@
             </div>
             <div class="container-fluid" id="attractions-content"> 
                 <div class="row g-0 content-row">
-                    <div class="col-12 col-md-6 my-auto" id="button-container"> <!-- Map Buttons -->
+                    <!-- Map Buttons -->
+                    <div class="col-12 col-md-6 my-auto" id="button-container"> 
                         <div class="row g-0" id="button-row">
-                            <div class="col-12 col-md-6 map-buttons"> <!-- Button 1-->
+                            <!-- Button 1-->
+                            <div class="col-12 col-md-6 map-buttons"> 
                                 <button type="button" name="map-button1" id="map-button1"> 
                                     <i class="fa fa-utensils" id="icon1"></i> 
                                     <span id="map-span-1">Restaurants</span>
                                 </button>
                             </div>
                             <br>
-                            <div class="col-12 col-md-6 map-buttons"> <!-- Button 2-->
+                            <!-- Button 2-->
+                            <div class="col-12 col-md-6 map-buttons"> 
                                 <button type="button" name="map-button2" id="map-button2">
                                     <i class="fas fa-tree" id="icon2"></i>
                                     <span id="map-span-2">Parks</span>
                                 </button>
                             </div>
                             <br>
-                            <div class="col-12 col-md-6 map-buttons"> <!-- Button 3-->
+                            <!-- Button 3-->
+                            <div class="col-12 col-md-6 map-buttons"> 
                                 <button type="button" name="map-button3" id="map-button3">
                                     <i class="fas fa-film" id="icon3"></i>
                                     <span id="map-span-3">Theatres</span>
                                     </button>
                             </div>
-                            <br>    
-                            <div class="col-12 col-md-6 map-buttons"> <!-- Button 4-->
+                            <br>
+                            <!-- Button 4-->   
+                            <div class="col-12 col-md-6 map-buttons"> 
                                 <button type="button" name="map-button4" id="map-button4">
                                     <i class="fas fa-map-pin" id="icon4"></i>
                                     <span id="map-span-4">Attractions</span>
@@ -155,8 +165,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Google Maps API -->
                     <div class="col-12 col-md-6" id="map-container">
-                        <div id="map"></div> <!-- Google Maps API -->
+                        <div id="map"></div> 
                     </div>
                 </div>
             </div>    
@@ -354,6 +365,7 @@
             </div>
             <div class="container-fluid" id="weather-container">
                 <div class="row g-0 content-row">
+                    <!-- 5 Day Weather Forecast API-->
                     <div class="container my-auto" id="weather-api">
                         <div class="row">
                             <div class="col-12">
@@ -402,11 +414,12 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Rainy day activities-->
                     <div class="container my-auto" id="weather-content">
                         <div class="row">
                             <div class="col-12 col-md-6 my-auto" id="rain-icon">
                                 <i class="fas fa-umbrella"></i> <br>
-                                <h1>Rainy day activities</h1>
+                                <h2>Rainy day activities</h2>
                             </div>
                             <div class="col-12 col-md-6">
                                 <p>
