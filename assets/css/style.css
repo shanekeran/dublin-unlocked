@@ -428,7 +428,14 @@ nav a:hover{
 
 #weather-content p{
     padding: 0px 20px;
-    font-size: 3vw;
+    font-size: 0.85em;
+}
+
+#weather-content li{
+    font-size: 0.85em;
+    text-align: left;
+    padding: 0px 5px;
+    list-style-type: square;
 }
 
  .fa-umbrella {
@@ -633,6 +640,7 @@ footer{
 /*-------------- Media Queries ----------------*/
 
 @media only screen and (min-width: 576px) {
+
 /* Splash page */
 #site-logo{
     width: 47vw;
@@ -669,8 +677,8 @@ nav img {
     font-size: 1.1em;
 }
 
-#home-content p, #home-content li, #weather-content p{
-    font-size: 0.85em;
+#home-content p, #home-content li, #weather-content p, #weather-content li{
+    font-size: 0.9em;
 }
 
 /*Home page*/
@@ -779,6 +787,7 @@ nav img {
 }
 
 /* Navbar*/
+
 .navbar-nav{
     font-size: 1.2em;
 }
@@ -797,6 +806,14 @@ nav img {
     font-size: 6vw;
 }
 
+#home-content p, #home-content li, #weather-content p, #weather-content li{
+    font-size: 1em;
+}
+
+#home-content h1, #weather-content h2{
+    font-size: 1.2em;
+}
+
 /*Home page*/
     
 #time-select{
@@ -806,14 +823,6 @@ nav img {
 
 #home-content{
     height: auto; 
-}
-
-#home-content h1, #weather-content h2{
-    font-size: 1.2em;
-}
-
-#home-content p, #home-content li, #weather-content p{
-    font-size: 0.9em;
 }
 
 /* Attractions */
@@ -951,6 +960,10 @@ nav img {
     font-size: 6vw;
 }
 
+#home-content p, #home-content li, #weather-content p, #weather-content li{
+    font-size: 0.95em;
+}
+
 /*Home page*/
 
 #home-image{
@@ -963,10 +976,6 @@ nav img {
 
 #home-content{
     padding: 2.5vh 2.5vw;
-}
-
-#home-content p, #home-content li{
-    font-size: 0.95em;
 }
 
 /* Attractions */
@@ -1159,18 +1168,18 @@ nav img {
     height: 30vh;
 }
 
-/* Home page */
-
-#home-content{
-    padding: 3vh 3vw;
+#home-content p, #home-content li, #weather-content p, #weather-content li{
+    font-size: 1em;
 }
 
 #home-content h1, #weather-content h2{
     font-size: 1.4em;
 }
 
-#home-content p, #home-content li, #weather-content p{
-    font-size: 1em;
+/* Home page */
+
+#home-content{
+    padding: 3vh 3vw;
 }
 
 /* Events */
@@ -1282,19 +1291,20 @@ nav img {
     padding: 0 4vw;
 }
 
-/*Home page*/
-
-#time-select{
-    width: 400px;
-    font-size: 1.5em;
+#home-content p, #home-content li, #weather-content p, #weather-content li{
+    font-size: 1.2em;
 }
 
 #home-content h1, #weather-content h2{
     font-size: 1.5em;
 }
 
-#home-content p, #home-content li, #weather-content p{
-    font-size: 1.1em;
+
+/*Home page*/
+
+#time-select{
+    width: 400px;
+    font-size: 1.5em;
 }
 
 /* Attractions */
