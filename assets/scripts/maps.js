@@ -20,15 +20,15 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: property.location,
             map:map,
-        })
+        });
 
         // Markers opened are pushed to an array called activeMarkers.
         activeMarkers.push(marker);
 
         // On click of a marker: Close current info windows and open the current marker with content included.
         marker.addListener("click",function(){
-            infoWindow.close()
-            infoWindow.setContent(property.content)
+            infoWindow.close();
+            infoWindow.setContent(property.content);
             infoWindow.open(map,marker);
         });
         
@@ -46,40 +46,40 @@ function initMap() {
     $("#map-button1").on("click", function(){
         clearMarkers();
         if($("#map-span-1").html()==="Restaurants"){
-            showMarkers(restaurantMarkers)
-           map.setZoom(12)
+            showMarkers(restaurantMarkers);
+           map.setZoom(12);
         } else{
-            showMarkers(takeawayMarkers)
-            map.setZoom(13)
+            showMarkers(takeawayMarkers);
+            map.setZoom(13);
         }
     });
     $("#map-button2").on("click",function(){
         clearMarkers();
         if($("#map-span-2").html()==="Parks"){
-            showMarkers(parksMarkers)
-           map.setZoom(11)
+            showMarkers(parksMarkers);
+           map.setZoom(11);
         } else {
-            showMarkers(pubMarkers)
-           map.setZoom(13)
+            showMarkers(pubMarkers);
+           map.setZoom(13);
         }
-    })
+    });
 
     $("#map-button3").on("click",function(){
         clearMarkers();
         if($("#map-span-3").html()==="Theatres"){
-            showMarkers(theatreMarkers)
-            map.setZoom(13)
+            showMarkers(theatreMarkers);
+            map.setZoom(13);
         } else{
-            showMarkers(clubMarkers)
-            map.setZoom(12)
+            showMarkers(clubMarkers);
+            map.setZoom(12);
         }
-    })
+    });
 
     $("#map-button4").on("click",function(){
         clearMarkers();
-        showMarkers(placeMarkers)
-        map.setZoom(12)
-    })
+        showMarkers(placeMarkers);
+        map.setZoom(12);
+    });
 
 
     function showMarkers(markers){
@@ -127,7 +127,7 @@ var restaurantMarkers = [
         location: {lat:53.33156818578229,lng:-6.25158695818032},
         content: "<h4>The Sussex Restaurant</h4><p>Classy bistro with panelled walls and dark wood floors, for unpretentious seasonal Irish cooking.</p>"
     }
-]
+];
 
 var parksMarkers = [
     {   
@@ -180,7 +180,7 @@ var parksMarkers = [
         content: "<h4>Irish National War Memorial Park</h4><p>Dedicated to the memory of the 49,400 Irish soldiers who gave their lives in the Great War, 1914–1918.</p>"
 
     }
-]
+];
 
 var placeMarkers = [
        {   
@@ -223,7 +223,7 @@ var placeMarkers = [
         content: "<h4>Kilmainham Gaol</h4><p>Former prison which is now a museum.</p>"
 
     }
-]
+];
 
 var theatreMarkers = [
        {   
@@ -266,7 +266,7 @@ var theatreMarkers = [
         content: "<h4>The Gaiety Theatre</h4><p>Classical Victorian auditorium for an array of performances especially musical theatre and opera.</p>"
 
     }
-]
+];
 
 // Map markers for night activities
 var takeawayMarkers = [
@@ -290,7 +290,7 @@ var takeawayMarkers = [
         location: {lat:53.353989066499864,lng:-6.258395874737682},
         content: "<h4>Turkish Kebab House</h4>"
     }
-]
+];
 
 var pubMarkers = [
     {   
@@ -325,7 +325,7 @@ var pubMarkers = [
         location: {lat:53.35658901024224,lng:-6.27383148096128},
         content: "<h4>McGowans</h4><p> Bar with Nightclub upstairs.</p>"
     }
-] 
+]; 
 
 var clubMarkers = [
        {   
@@ -348,4 +348,4 @@ var clubMarkers = [
         location: {lat:53.34666494427766,lng:-6.279729689875963},
         content: "<h4>Index</h4><p>Nightclub</p>"
     },
-]
+];

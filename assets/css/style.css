@@ -115,8 +115,8 @@ p,li, .daily-forecast, #back-top, #enter-button{
     color: #000000;
 }
 .section-title-night{
-    background-color: #1f1f1f;
-    border: 3px solid rgb(255, 255, 255)e;
+    background-color: #000000;
+    border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
 
@@ -171,7 +171,7 @@ nav a:hover{
 
 .navbar-collapse{
     max-height: 60vh;
-    overflow: overlay;
+    overflow: scroll;
     -webkit-box-pack: center;
         justify-content: center;
     margin-right: 7vw; /* to get the true center (nav logo is 7vw width)*/
@@ -246,14 +246,15 @@ nav a:hover{
 
 #home h1 {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: 600;
     margin: 15px 0px;
 }
 
 #home-content p, #home-content li{
-    padding: 0px 20px;
+    padding: 0px 25px;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.85em;
 }
 
 #home-content li{
@@ -366,7 +367,7 @@ nav a:hover{
 
 #event-api-container{
     height: auto;
-    max-width: 1100px;
+    max-width: 1300px;
     color: black;
 }
 
@@ -550,6 +551,10 @@ hr{
     font-size: 1.5em;
 }
 
+#contact p{
+    padding: 10px;
+}
+
 #back-top{
     text-align: center;
     font-size: 1em;
@@ -661,11 +666,11 @@ nav img {
 }
 
 #home-content h1, #weather-content h2{
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 #home-content p, #home-content li, #weather-content p{
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 /*Home page*/
@@ -804,11 +809,11 @@ nav img {
 }
 
 #home-content h1, #weather-content h2{
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #home-content p, #home-content li, #weather-content p{
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 /* Attractions */
@@ -846,6 +851,10 @@ nav img {
 
 #weather-container{
     height: 65vw;
+}
+
+.daily-forecast{
+    padding: 0px 12px;
 }
 
 .w-icon{
@@ -957,7 +966,7 @@ nav img {
 }
 
 #home-content p, #home-content li{
-    font-size: 0.88em;
+    font-size: 0.95em;
 }
 
 /* Attractions */
@@ -985,7 +994,7 @@ nav img {
 }
 
 .carousel-caption{
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
 }
 
@@ -1028,7 +1037,7 @@ nav img {
 }
 
 #event-container{
-    height: 55vw;
+    height: auto;
 }
 
 #event-container h2{
@@ -1052,10 +1061,6 @@ nav img {
 
 .carousel-dark .carousel-indicators li{
     border: 2px solid #fff;
-}
-
-.event-image{
-    max-height: 40vw;
 }
 
 /* Weather */
