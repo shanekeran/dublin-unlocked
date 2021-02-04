@@ -119,6 +119,9 @@ request.onload = function () {
                 case "Snow, Overcast":
                     $(iconElement).attr("src","assets/images/weather/snow.png");
                     break;
+                case "Snow, Partially cloudy":
+                    $(iconElement).attr("src","assets/images/weather/snow.png");
+                    break;
                 default:
                     $(iconElement).attr("src","assets/images/weather/sunny.png");
             } // End of Switch statement
