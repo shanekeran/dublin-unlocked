@@ -7,7 +7,7 @@ h1, h2, h3, #home-image p, .map-buttons, #form-button{
     font-family: "Raleway", sans-serif;
 }
 
-p,li, .daily-forecast, #back-top, #enter-button{
+p,li, .daily-forecast, .back-to-top, #enter-button{
     font-family: "Open Sans", sans-serif;
 }
 
@@ -17,7 +17,7 @@ p,li, .daily-forecast, #back-top, #enter-button{
     height: 100vh;
 }
 
-#city-bg-image {
+.city-bg-image {
     background-image: url("https://i.imgur.com/nnppg2f.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,6 +131,21 @@ p,li, .daily-forecast, #back-top, #enter-button{
     padding: 5px 10px;
     font-size: 8vw;
     font-weight: 500;
+}
+
+.back-to-top{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+.back-to-top a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-to-top a:hover{
+    color: #0f81d2!important;
 }
 
 /*----------------- Navbar ---------------*/
@@ -374,7 +389,6 @@ nav a:hover{
 
 #event-api-container{
     height: auto;
-    max-width: 1300px;
     color: black;
 }
 
@@ -569,21 +583,6 @@ hr{
     padding: 10px;
 }
 
-#back-top{
-    text-align: center;
-    font-size: 1em;
-    margin-top: 15px;
-}
-
-#back-top a{
-    color: #2d2d2d;
-    text-decoration: none;
-}
-
-#back-top a:hover{
-    color: #0f81d2!important;
-}
-
 #fullname, #email, #comment {
     border: 1px solid #333333;
     margin: 5px 0px;
@@ -738,6 +737,10 @@ nav img {
     font-size: 0.9em;
 }
 
+.back-to-top{
+    font-size: 1em;
+}
+
 /*Home page*/
 #time-select{
     left: 50%;
@@ -776,7 +779,6 @@ nav img {
 .event-card p{
     font-size: 1em;
 }
-
 
 /* Weather */
 
@@ -822,10 +824,6 @@ nav img {
 
 #comment{
     width: 40vw;
-}
-
-#back-top{
-    font-size: 1.2em;
 }
 
 }
@@ -1021,6 +1019,10 @@ nav img {
     font-size: 0.95em;
 }
 
+.back--to-top{
+    font-size: 1.1em;
+}
+
 /*Home page*/
 
 #home-image{
@@ -1183,9 +1185,6 @@ nav img {
     height: 140px;
 }
 
-#back-top{
-    font-size: 1.3em;
-}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1236,6 +1235,10 @@ nav img {
 }
 
 /* Events */
+
+#event-api-container{
+    max-width: 800px;
+}
 
 #event-container h2 {
     padding: 20px 0px;
@@ -1312,9 +1315,6 @@ nav img {
     width: 130px;
 }
 
-#back-top{
-    margin-top: 0px;
-    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1363,6 +1363,10 @@ nav img {
 }
 
 /* Events */
+
+#event-api-container {
+    max-width: 60vw;
+}
 
 #event-container h2{
     font-size: 2em;
