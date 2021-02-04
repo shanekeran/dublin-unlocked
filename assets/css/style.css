@@ -17,7 +17,7 @@ p,li, .daily-forecast, #back-top, #enter-button{
     height: 100vh;
 }
 
-#splash-bg-image {
+#city-bg-image {
     background-image: url("https://i.imgur.com/nnppg2f.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,6 +99,12 @@ p,li, .daily-forecast, #back-top, #enter-button{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+@supports (-webkit-touch-callout: none) { /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
+  #attractions-image, #events-image, #weather-image {
+    background-attachment: scroll; /* Fix parralax image display on Safari */
+} 
 }
 
 .section-title{
@@ -252,13 +258,14 @@ nav a:hover{
 }
 
 #home-content p, #home-content li{
-    padding: 0px 25px;
+    padding: 0px 20px;
     text-align: center;
     font-size: 0.85em;
 }
 
 #home-content li{
-    padding: 1vh 0;
+    padding-top:  1vh;
+    padding-bottom: 1vh;
     list-style-type: square;
 }
 
@@ -636,6 +643,56 @@ footer{
 
 }
 
+/*--------------- 404 Page --------------------*/
+
+#redirect-body{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#city-bg-image{
+    background-image: url("https://i.imgur.com/nnppg2f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(2px) grayscale(80%); /* Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
+    -webkit-filter: blur(2px) grayscale(80%);
+}
+
+#redirect-container{
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid #000000;
+    position: relative;
+    height: 100vh;
+}
+
+#redirect-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 15px;
+}
+
+#redirect-body button{
+    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+        background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    -webkit-box-shadow: 0px 4px #2a74b3;
+        box-shadow: 0px 4px #2a74b3;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+#redirect-body button a {
+    text-decoration: none;
+    color: #000000;
+}
 
 /*-------------- Media Queries ----------------*/
 
@@ -1045,10 +1102,6 @@ nav img {
     display:none;
 }
 
-#event-container{
-    height: auto;
-}
-
 #event-container h2{
     font-size: 1.8em;
     padding: 10px 0px;
@@ -1184,10 +1237,6 @@ nav img {
 
 /* Events */
 
-#event-container{
-    height: 55vw;
-}
-
 #event-container h2 {
     padding: 20px 0px;
 }
@@ -1314,10 +1363,6 @@ nav img {
 }
 
 /* Events */
-
-#event-container{
-    height: 50vw;
-}
 
 #event-container h2{
     font-size: 2em;
