@@ -15,7 +15,7 @@ function sendMail() {
             console.log("Submission sent successfully", response);
             clear();
             $("#form-button").hide();
-            $("form").append("<p>Submitted successfully.</p>");
+            $("#submit-msg").html("Submitted successfully.");
         },
         function(error) {
             console.log("Submission failed to submit", error);

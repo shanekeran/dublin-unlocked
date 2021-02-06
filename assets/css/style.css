@@ -27,53 +27,42 @@ p,li, .daily-forecast, .back-to-top, #enter-button{
     width: 100vw;
     height: 100vh;
     filter: blur(2px) grayscale(80%); /* Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
-    -webkit-filter: blur(2px) grayscale(80%);
 }
 
 #site-logo{
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 70vw;
 }
 
 #splash-button {
     position: relative;
     top: 20%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     margin: 0px 15px;
 }
 
 #enter-button {
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 70vw;
     font-size: 1.3em;
     border-radius: 10px;
     padding: 10px 20px;
-    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-        background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    -webkit-box-shadow: 0px 6px #2a74b3;
-            box-shadow: 0px 6px #2a74b3;
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 6px #2a74b3;
     border: none;
 }
 #enter-button:hover {
-    -webkit-box-shadow: 0px 2px #2a74b3;
-            box-shadow: 0px 2px #2a74b3;
+    box-shadow: 0px 2px #2a74b3;
 }
 
 /*-------------- Main Content - General ------------*/
 
 .day-bg{
-    background-image: -o-linear-gradient(10deg, #fff, #eaf4f9);
-        background-image: linear-gradient(80deg, #fff, #eaf4f9);
+    background-image: linear-gradient(80deg, #fff, #eaf4f9);
     color: #202020;
 }
 
@@ -110,9 +99,7 @@ p,li, .daily-forecast, .back-to-top, #enter-button{
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     width: fit-content;
     background-color: #f7f7f7fc;
     border: 2px solid rgb(0, 0, 0);
@@ -185,16 +172,14 @@ nav a:hover{
 }
 .navbar-toggler:focus{
     border-width: 3px;
-    -webkit-box-shadow: 0 0 0 0; /*overriding bootstrap default*/
-        box-shadow: 0 0 0 0; 
+    box-shadow: 0 0 0 0; /*overriding bootstrap default*/  
 }
 
 .navbar-collapse{
     max-height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
-    -webkit-box-pack: center;
-        justify-content: center;
+    justify-content: center;
     margin-right: 7vw; /* to get the true center (nav logo is 7vw width)*/
 }
 
@@ -210,11 +195,11 @@ nav a:hover{
 }
 
 .home-image-day {
-    background-image: url("https://i.imgur.com/BEUVNet.jpg");
+    background-image: url("https://i.imgur.com/h4pnmL4.jpg");
 }
 
 .home-image-night{
-    background-image: url("https://i.imgur.com/vCk7acS.jpg");
+    background-image: url("https://i.imgur.com/anxj7vD.jpg");
 }
 #time-select{
     position: absolute;
@@ -229,15 +214,13 @@ nav a:hover{
 #home-image p {
     margin-bottom: 12px;
     border-bottom: 1.5px solid white;
-    -webkit-filter: drop-shadow(1px 1px 2px black);
-            filter: drop-shadow(1px 1px 2px black);
+    filter: drop-shadow(1px 1px 2px black);
     color: rgb(255, 255, 255);
 }
 
 #time-button {
     padding: 5px 15px;
-    -webkit-box-shadow: 0 4px rgb(61, 61, 61);
-            box-shadow: 0 4px rgb(61, 61, 61);
+    box-shadow: 0 4px rgb(61, 61, 61);
 }
 
 #time-button:hover {
@@ -287,11 +270,11 @@ nav a:hover{
 /*--------------- Attractions -----------------*/
 
 .attractions-image-day {
-    background-image: url("https://i.imgur.com/4rr5Kgl.jpg");
+    background-image: url("https://i.imgur.com/elK10Ge.jpg");
 }
 
 .attractions-image-night{
-    background-image: url("https://i.imgur.com/LmWAgSf.jpg");
+    background-image: url("https://i.imgur.com/kT45NaR.jpg");
 }
 
 #attractions-content{
@@ -307,18 +290,15 @@ nav a:hover{
 }
 
 #button-row{
-    -webkit-box-pack: center;
-        justify-content: center;
+    justify-content: center;
     max-height: 400px;
 }
 
 .map-buttons button{
     padding: 10px 15px;
     font-size: 0.9em;
-    background-image: linear-gradient(180deg, #82cce8, #348bd6);
-        background-image: -o-linear-gradient(top, #82cce8, #348bd6);     
-    -webkit-box-shadow: 0px 6px #2a74b3;
-            box-shadow: 0px 6px #2a74b3;
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);    
+    box-shadow: 0px 6px #2a74b3;
     border: none;
     border-radius: 10px;
     width: 60vw;
@@ -326,8 +306,7 @@ nav a:hover{
 }
 
 .map-buttons button:hover,.map-buttons button:active {
-    -webkit-box-shadow: 0px 2px  #2a74b3;
-            box-shadow: 0px 2px  #2a74b3;
+    box-shadow: 0px 2px  #2a74b3;
     outline: none;
 }
 
@@ -349,8 +328,7 @@ nav a:hover{
 
 #map-container{
     display: flex;
-    -webkit-box-pack: center;
-        justify-content: center;
+    justify-content: center;
     margin: 30px 0px 40px 0px;
     height: 40vh;
     max-height: 400px;
@@ -358,7 +336,6 @@ nav a:hover{
 
 #map{
     width: 80%;
-   /* height: 35vh;*/
     height: 100%;
     max-height: 600px;
     color: black;
@@ -368,10 +345,10 @@ nav a:hover{
 /*------------------- Events ------------------*/
 
 .events-image-day{
-    background-image: url("https://i.imgur.com/5ERbBXu.jpg");
+    background-image: url("https://i.imgur.com/U5HcfcQ.jpg");
 }
 .events-image-night{
-    background-image: url("https://i.imgur.com/Yo9BN5c.jpg");
+    background-image: url("https://i.imgur.com/nQLpWUn.jpg");
 }
 
 #event-container{
@@ -394,8 +371,7 @@ nav a:hover{
 .event-card{
     margin: 15px 0px;
     border: none;
-    -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
-            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
@@ -430,10 +406,10 @@ nav a:hover{
 /*---------------- Weather -------------------*/
 
 .weather-image-day{
-    background-image: url("https://i.imgur.com/0G1cSKr.jpeg");
+    background-image: url("https://i.imgur.com/dyqeeMl.jpg");
 }
 .weather-image-night{
-    background-image: url("https://i.imgur.com/x81FSyI.jpg");
+    background-image: url("https://i.imgur.com/QuDA5O4.jpg");
 }
 
 #weather-content{
@@ -474,8 +450,7 @@ nav a:hover{
 }
 
 #forecast-row{
-    -webkit-box-pack: center;
-        justify-content: center;
+    justify-content: center;
 }
 
 .second-row{
@@ -483,8 +458,7 @@ nav a:hover{
 }
 
 .daily-forecast div{
-    -webkit-box-pack: center;
-        justify-content: center;
+    justify-content: center;
 }
 
 .daily-forecast div img{
@@ -552,25 +526,13 @@ hr{
     100%{ right: 0%;}
 } 
 
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 50%;}
-    100%{ right: 0%;}
-    
-}
-
 /*--------------- Contact Us ----------------*/
 
 #contact {
     text-align: center;
     height: auto;
-    display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact h1{
@@ -599,10 +561,8 @@ hr{
 }
 
 #form-button{
-    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-        background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    -webkit-box-shadow: 0px 4px #2a74b3;
-            box-shadow: 0px 4px #2a74b3;
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 4px #2a74b3;
     border-radius: 5px;
     border: none;
     font-size: 0.9em;
@@ -610,8 +570,7 @@ hr{
 }
 
 #form-button:hover, #form-button:active{
-    -webkit-box-shadow: 0px 1px #2a74b3;
-            box-shadow: 0px 1px #2a74b3;
+    box-shadow: 0px 1px #2a74b3;
 }
 
 /*-------------- Footer ----------------------*/
@@ -658,7 +617,6 @@ footer{
     width: 100vw;
     height: 100vh;
     filter: blur(2px) grayscale(80%); /* Learned this CSS property from w3schools (https://www.w3schools.com/howto/howto_css_blurred_background.asp) */
-    -webkit-filter: blur(2px) grayscale(80%);
 }
 
 #redirect-container{
@@ -674,18 +632,18 @@ footer{
     padding: 0px 15px;
 }
 
-#redirect-body button{
-    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-        background-image: linear-gradient(180deg, #82cce8, #348bd6);
-    -webkit-box-shadow: 0px 4px #2a74b3;
-        box-shadow: 0px 4px #2a74b3;
+#return{
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    box-shadow: 0px 4px #2a74b3;
     border-radius: 5px;
     border: none;
-    font-size: 1em;
+    width: 50vw;
+    max-width: 500px;
+    font-size: 0.9em;
     padding: 5px 10px;
 }
 
-#redirect-body button a {
+#return a{
     text-decoration: none;
     color: #000000;
 }
@@ -741,9 +699,7 @@ nav img {
 /*Home page*/
 #time-select{
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 35vw;
     font-size: 1.1em
 }
@@ -802,12 +758,6 @@ nav img {
     50%{ right : 45%;}
     100%{ right: 0%;}
 } 
-
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 45%;}
-    100%{ right: 0%;}
-}
 
 /* Contact */
 
@@ -940,12 +890,6 @@ nav img {
     50%{ right : 42%;}
     100%{ right: 0%;}
 } 
-
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 42%;}
-    100%{ right: 0%;}
-}
 
 /* Contact */
 
@@ -1093,8 +1037,7 @@ nav img {
     opacity: 1;
     width: 3em;
     height: 3em;
-    -webkit-filter: none;
-        filter: drop-shadow(2px 2px 2px black)!important;
+    filter: drop-shadow(2px 2px 2px black)!important;
 }
 
 #mobile-event-cards{
@@ -1153,12 +1096,6 @@ nav img {
     50%{ right : 40%;}
     100%{ right: 0%;}
 } 
-
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 40%;}
-    100%{ right: 0%;}
-}
 
 /* Contact */
 
@@ -1276,12 +1213,6 @@ nav img {
     100%{ right: 0%;}
 } 
 
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 35%;}
-    100%{ right: 0%;}
-
-}
 /* Contact Us */
 
 #contact h1{
@@ -1402,12 +1333,6 @@ nav img {
     50%{ right : 28%;}
     100%{ right: 0%;}
 } 
-
-@-webkit-keyframes scroll {
-    0% { right: 0%;}
-    50%{ right : 28%;}
-    100%{ right: 0%;}
-}
 
 /* Contact Us */
 

@@ -1,5 +1,5 @@
 # Dublin Unlocked
-Your key to the city.
+<i>Your key to the city.</i>
 
 Dublin unlocked is an interactive city guide for Dublin, Ireland. It offers value to both visitors and locals alike. 
 It provides a live weather forecast, local events, and a map showcasing the best spots in the city. 
@@ -67,7 +67,7 @@ Features to be included on the website are:
 
 Features to be introduced at a later date:
 - The ability to browse and book available hotels in the area. 
-This can be implemented when the website receives the minimum amount of traffic required to use the booking.com API.
+This can be implemented when the website receives the minimum amount of traffic required to use the Booking API.
 - Introduce a “Tours” section for booking tour tickets like some competitors offer.
 
 ### Structure
@@ -104,14 +104,22 @@ Dublin Unlocked is a single page website with 5 sections.
 
 I used Balsamiq to create a wireframe for each device. The wireframes were created in the planning stage, so the current version differs slightly.
 
-[Wireframe for Desktop, Tablet and Mobile.](assets/documents/wireframe.png)
+![Wireframe for Desktop, Tablet and Mobile.](assets/documents/wireframe.png)
 
 ### Surface
 
 #### Colour
-For my background color, I picked a linear gradient that subtly fades from white to light blue (#fff to #eaf4f9) with black as the font colour. 
-When dark mode is selected, the background colour changes to dark grey (#3d3e3efc) with a white font colour. 
+For my background color, I picked a linear gradient that subtly fades from white to light blue (**#eaf4f9**) with black as the font colour.
+
+![background colour gradient](https://i.imgur.com/vhcnhrc.png)  
+
+When dark mode is selected, the background colour changes to dark grey (**#3d3e3efc**) with a white font colour.
+
+![night background colour](https://i.imgur.com/0lhNIZB.png)
+
 All the buttons have a standardised blue gradient colour. 
+
+![button colour gradient](https://i.imgur.com/qIxcHCJ.png)
 
 ### Typography
 I chose the Raleway font for my headings and Open Sans font for my content. 
@@ -170,7 +178,7 @@ ___
 
 10. Imgur 
 
-    I used imgur.com to host most of my site images.
+    I used Imgur to host most of my site images.
 
 11. Unsplash 
 
@@ -196,27 +204,19 @@ ___
 
     This was used to automatically send an email to the site owner on submission of the contact form.
 
-17. Autoprefixer
-
-    Determined what vendor-prefixes were required to ensure my website had better browser compatibility.
-
 ## Testing
 ___
 
-The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to validate the project to ensure there were no syntax errors.
+The W3C Markup Validator, W3C CSS Validator Services and jshint were used to validate the project to ensure there were no syntax errors.
 
 ### HTML Validation
-[index.html](#)
-[404.html](#)
+Index.html and 404.html passed through the W3C HTML Validator with no errors.
 
 ### CSS Validation
-[style.css](#)
+My only external css file (style.css) passed through the W3C CSS Validator with no errors.
 
 ### Javascript Validation
-[script.js](#)
-[maps.js](#)
-[email.js](#)
-[cookies.js](#)
+All four external javascript files passed through jshint with no major issues.
 
 ### Testing the User stories
 
@@ -279,8 +279,8 @@ The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to
 
 5. To display a message to the user if one of the features fails to load, so that they can try again later.
     * I have implemented and tested that when:
-        *  The Ticketmaster API fails to load, the following message appears “”.
-        *  The Visual Crossing API fails to load, the following message appears””.
+        *  The Ticketmaster API fails to load, the following message appears “Ticketmaster API loaded successfully”.
+        *  The Visual Crossing API fails to load, the following message appears”Visual Crossing API loaded successfully”.
     * There is also a custom 404 page to redirect users back to the home page without having to use the browser back button.
 
 ### Further Testing
@@ -288,10 +288,11 @@ The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to
 - Website has been tested on the following browsers, using the latest version available: Chrome, Safari, Edge and Firefox. The tests were successful.
 - All internal and external links on the website have been tested and work as intended. Tested by clicking every link on each page.
 - I used Lighthouse to test each page for accessibility and performance.
-    * [Desktop](#)
-    * [Mobile](#)
+    * [Desktop](assets/documents/lighthouse-desktop.jpg)
+    * [Mobile](assets/documents/lighthouse-mobile-jpg)
 
-    <!-- comment about results -->
+    I'm delighted to see such high results for accessibility, best practices and SEO. I'm also happy with my high performance on desktop but unfortunatelt performace on mobile is quite low,
+    at just above 50. Since the website contains a lot of images, even with lazy-loading and other tactics, I was unable to get this higher at present.
 
 ### Known Bugs and Fixes
 List below are some of the more time-consuming bugs I encountered while creating Dublin Unlocked.
@@ -299,6 +300,10 @@ List below are some of the more time-consuming bugs I encountered while creating
 1. The gallery animation would come away from the side of the page on larger screens. 
     This was resolved by increasing photo size, changing the container width to “max-content” 
     and decreasing the animation movement as the screen size gets wider.
+    <details>
+    <summary>Click here to view a screenshot.</summary>
+    <img src="https://i.imgur.com/OWoCAMd.jpg" width="660px" height="330px">
+    </details>
 
 2. Animated gallery displaying incorrectly on some browsers. 
     This was fixed by removing the webkit vender prefix on the animation properties.
@@ -375,10 +380,6 @@ ___
 - Code Institute
 
     * I implemented what I have learned over the last few months in the Full Stack Software Development course.
-
-- Autoprefixer
-
-    * All vendor prefixes included in style.css were obtained by inputting my code on autoprefixer.github.io
 
 - YouTube
 
