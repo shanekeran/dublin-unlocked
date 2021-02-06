@@ -2,7 +2,7 @@ function clear(){
           document.getElementById("fullname").value = "",
           document.getElementById("email").value = "",
           document.getElementById("comment").value = "";
-} // code sourced from https://www.codegrepper.com/code-examples/html/html+clear+input+after+submit
+} // code sourced from https://www.w3schools.com/howto/howto_html_clear_input.asp
 
 function sendMail() {
     emailjs.send("gmail", "template_qm6hv6v", {

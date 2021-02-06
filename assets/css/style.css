@@ -58,9 +58,8 @@ p,li, .daily-forecast, .back-to-top, #enter-button{
     font-size: 1.3em;
     border-radius: 10px;
     padding: 10px 20px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
-        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+        background-image: linear-gradient(180deg, #82cce8, #348bd6);
     -webkit-box-shadow: 0px 6px #2a74b3;
             box-shadow: 0px 6px #2a74b3;
     border: none;
@@ -192,7 +191,8 @@ nav a:hover{
 
 .navbar-collapse{
     max-height: 60vh;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-box-pack: center;
         justify-content: center;
     margin-right: 7vw; /* to get the true center (nav logo is 7vw width)*/
@@ -315,9 +315,8 @@ nav a:hover{
 .map-buttons button{
     padding: 10px 15px;
     font-size: 0.9em;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
-        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    background-image: linear-gradient(180deg, #82cce8, #348bd6);
+        background-image: -o-linear-gradient(top, #82cce8, #348bd6);     
     -webkit-box-shadow: 0px 6px #2a74b3;
             box-shadow: 0px 6px #2a74b3;
     border: none;
@@ -547,7 +546,7 @@ hr{
     padding: 5px;
 }
 
-@keyframes scroll {
+@keyframes scroll {  /* Code sourced from Stack Overflow (https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right) */
     0% { right: 0%;}
     50%{ right : 50%;}
     100%{ right: 0%;}
@@ -600,9 +599,8 @@ hr{
 }
 
 #form-button{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#82cce8), to(#348bd6));
-        background-image: -o-linear-gradient(top, #82cce8, #348bd6);
-            background-image: linear-gradient(180deg, #82cce8, #348bd6);
+    background-image: -o-linear-gradient(top, #82cce8, #348bd6);
+        background-image: linear-gradient(180deg, #82cce8, #348bd6);
     -webkit-box-shadow: 0px 4px #2a74b3;
             box-shadow: 0px 4px #2a74b3;
     border-radius: 5px;
@@ -665,7 +663,6 @@ footer{
 
 #redirect-container{
     background-color: rgba(255, 255, 255, 0.75);
-    border: 2px solid #000000;
     position: relative;
     height: 100vh;
 }
@@ -1359,7 +1356,7 @@ nav img {
 /* Attractions */
 
 #map-container{
-    height: 45vh;
+    height: 40vw;
 }
 
 /* Events */
