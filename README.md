@@ -4,10 +4,10 @@
 Dublin unlocked is an interactive city guide for Dublin, Ireland. It offers value to both visitors and locals alike. 
 It provides a live weather forecast, local events, and a map showcasing the best spots in the city. 
 Dublin unlocked is the perfect replacement for a bulky traveller’s guidebook while you are on the go. 
-Dublin unlocked is a fictious company with the slogan “Your key to the city”. 
+Dublin unlocked is a fictitious company with the slogan “Your key to the city”. 
 The website maintains its design on devices of all screen sizes, so it can be enjoyed on the go or at home on your desktop.
 
-[View the live project by clicking here](https://shanekeran.github.io/dublin-unlocked)
+[View the live project by clicking here.](https://shanekeran.github.io/dublin-unlocked)
 
 ![mockup of the website on different devices](assets/documents/mockup.JPG "Dublin Unlocked display")
 
@@ -98,7 +98,7 @@ Dublin Unlocked is a single page website with 5 sections.
 5. Contact Us
 
     The Contact section contains a form for feedback or comments to be submitted by the user. 
-    On submission it sends an email to the site owner and displays a confirmation message to the user.
+    On submission, it sends an email to the site owner and displays a confirmation message to the user.
 
 ### Skeleton
 
@@ -131,7 +131,7 @@ Overall, I am very pleased with aesthetic of the entire page, especially the viv
 
 ## Technologies used
 ___
-### Lanuages
+### Languages
 - HTML5
 - CSS3
 - Javascript
@@ -279,8 +279,8 @@ All four external javascript files passed through jshint with no major issues.
 
 5. To display a message to the user if one of the features fails to load, so that they can try again later.
     * I have implemented and tested that when:
-        *  The Ticketmaster API fails to load, the following message appears “Ticketmaster API loaded successfully”.
-        *  The Visual Crossing API fails to load, the following message appears”Visual Crossing API loaded successfully”.
+        *  The Ticketmaster API fails to load, the following message appears “Event information currently unavailable. Please try again later to discover exciting events!”.
+        *  The Visual Crossing API fails to load, the following message appears ”Weather Forecast Unavailable. Please try again later.”.
     * There is also a custom 404 page to redirect users back to the home page without having to use the browser back button.
 
 ### Further Testing
@@ -291,7 +291,7 @@ All four external javascript files passed through jshint with no major issues.
     * [Desktop](assets/documents/lighthouse-desktop.jpg)
     * [Mobile](assets/documents/lighthouse-mobile-jpg)
 
-    I'm delighted to see such high results for accessibility, best practices and SEO. I'm also happy with my high performance on desktop but unfortunatelt performace on mobile is quite low,
+    I'm delighted to see such high results for accessibility, best practices and SEO. I'm also happy with my high performance on desktop but unfortunately performance on mobile is quite low,
     at just above 50. Since the website contains a lot of images, even with lazy-loading and other tactics, I was unable to get this higher at present.
 
 ### Known Bugs and Fixes
@@ -306,7 +306,7 @@ List below are some of the more time-consuming bugs I encountered while creating
     </details>
 
 2. Animated gallery displaying incorrectly on some browsers. 
-    This was fixed by removing the webkit vender prefix on the animation properties.
+    This was fixed by removing the webkit vendor prefix on the animation properties.
 
 3. Parallax images displaying incorrectly on Safari. 
     Image was static, zoomed in and pixelated. Fixed by adding in code found on Stack Overflow. 
@@ -362,7 +362,7 @@ ___
 - Stack Overflow
 
     * [This thread](https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices) and comment by Jonathan Lin was used to fix parallax image issues on safari.](https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices)
-    * [This thread](https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right) was used to help setup my gallery animation.
+    * [This thread](https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right) was used to help set up my gallery animation.
     * [This comment](https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time) by immayankmodi was used to help me figure out how to convert epoch date to a dd/mm/yy format.
     * [This thread](https://stackoverflow.com/questions/19057513/toggling-an-image-src-with-jquery) helped me learn how to toggle between my two navbar logos.
 
@@ -431,4 +431,4 @@ ___
 
 - My fellow Code Institute students for their suggestions.
 
-- Tutor support at Code Institue, for answering my technical questions.
+- Tutor support at Code Institute, for answering my technical questions.

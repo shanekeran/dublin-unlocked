@@ -14,17 +14,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="preconnect" href="https://imgur.com">
-    <!-- Email Js -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
-        (function() {
-        emailjs.init("user_JjDbjyafqspKbeOgfUbmT");
-        })();
-    </script>
 </head>
 <body class="day-bg">
     <!-- Splash Page for first time visitors -->
-    <div id="splash-page" style="display: none;">
+    <div id="splash-page" style="display: none;"><!-- Inline style is to prevent this content from showing before external CSS file loads-->
         <div class="city-bg-image"></div>
         <img src="assets/images/site-logo.png" alt="Dublin unlocked logo" id="site-logo" loading="lazy">
         <div id="splash-button">
@@ -32,13 +25,13 @@
         </div>
     </div>
     <!-- Main Content revealed after Splash page-->
-    <div id="main-content"> <!-- Inline style is to prevent this content from showing before external CSS file loads-->
+    <div id="main-content"> 
         <!-- Navbar -->
         <header>
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid" id="nav-container">
                     <!-- Nav Logo -->
-                    <a href="#home"><img src="assets/images/nav-logo.png" alt="Company logo" id="nav-logo"></a>
+                    <img src="assets/images/nav-logo.png" alt="Company logo" id="nav-logo">
                     <!-- Nav toggler-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
@@ -75,7 +68,7 @@
             <div id="home-image" class="home-image-day">
                 <div id="time-select">
                     <p>Experience Dublin by:</p>
-                    <button type="button" name="time-button" id="time-button" class="night-button">
+                    <button type="button" name="time-button" id="time-button" class="night-button" aria-label="click to toggle between day or night mode">
                         <i class="fas fa-moon"></i>
                     <span id="button-text">Night</span>
                     </button>
@@ -182,7 +175,7 @@
                     <h1>Events</h1>
                 </div>
             </div>
-            <div class="container-fluid" id="event-container">
+            <div class="container-fluid" id="event-container" aria>
                 <div class="row g-0 content-row">
                     <h2 class="my-auto">Upcoming Events in Dublin</h2>
                     <div class="container-fluid" id="event-api-container">
@@ -371,7 +364,7 @@
                                     <!-- Day One-->
                                     <div class="col-4 col-md-2 daily-forecast">
                                         <div class="row date">Date</div>
-                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy"></div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy" aria-hidden="true"></div>
                                         <div class="row conditions">Conditions</div>
                                         <div class="row figures"><i class="fas fa-thermometer-three-quarters"></i><span class="max-temp"></span></div>
                                         <div class="row figures"><i class="fas fa-tint"></i><span class="precip"></span></div>    
@@ -379,7 +372,7 @@
                                     <!-- Day Two-->
                                     <div class="col-4 col-md-2 daily-forecast">
                                         <div class="row date">Date</div>
-                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy"></div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy" aria-hidden="true"></div>
                                         <div class="row conditions">Conditions</div>
                                         <div class="row figures"><i class="fas fa-thermometer-three-quarters"></i><span class="max-temp"></span></div>
                                         <div class="row figures"><i class="fas fa-tint"></i><span class="precip"></span></div>    
@@ -387,7 +380,7 @@
                                     <!-- Day Three-->
                                     <div class="col-4 col-md-2 daily-forecast">
                                         <div class="row date">Date</div>
-                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy"></div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy" aria-hidden="true"></div>
                                         <div class="row conditions">Conditions</div>
                                         <div class="row figures"><i class="fas fa-thermometer-three-quarters"></i><span class="max-temp"></span></div>
                                         <div class="row  figures"><i class="fas fa-tint"></i><span class="precip"></span></div>    
@@ -395,7 +388,7 @@
                                     <!-- Day Four-->
                                     <div class="col-4 col-md-2 daily-forecast second-row">
                                         <div class="row date">Date</div>
-                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy"></div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy" aria-hidden="true"></div>
                                         <div class="row conditions">Conditions</div>
                                         <div class="row figures"><i class="fas fa-thermometer-three-quarters"></i><span class="max-temp"></span></div>
                                         <div class="row figures"><i class="fas fa-tint"></i><span class="precip"></span></div>    
@@ -403,7 +396,7 @@
                                     <!-- Day Five-->
                                     <div class="col-4 col-md-2 daily-forecast second-row">
                                         <div class="row date">Date</div>
-                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy"></div>
+                                        <div class="row icon"><img src="assets/images/weather/sunny.png" alt="weather icon" class="w-icon" loading="lazy" aria-hidden="true"></div>
                                         <div class="row conditions">Conditions</div>
                                         <div class="row figures"><i class="fas fa-thermometer-three-quarters"></i><span class="max-temp"></span></div>
                                         <div class="row figures"><i class="fas fa-tint"></i><span class="precip"></span></div>    
@@ -416,7 +409,7 @@
                     <div class="container my-auto" id="weather-content">
                         <div class="row">
                             <div class="col-12 col-md-4 my-auto" id="rain-icon">
-                                <i class="fas fa-umbrella"></i> <br>
+                                <i class="fas fa-umbrella" aria-hidden="true"></i> <br>
                                 <h2>Rainy day activities</h2>
                             </div>
                             <div class="col-12 col-md-8">
@@ -441,7 +434,7 @@
         </section>
         <!-- Gallery -->
         <hr>
-        <div class="container-fluid" id="gallery-container">
+        <div class="container-fluid" id="gallery-container" aria-hidden="true">
             <div id="gallery">
                 <div class="row g-0 gallery-row">
                     <img src="https://i.imgur.com/OWuJ34Lm.jpg" alt="lighthouse">
@@ -474,9 +467,13 @@
                 <div>
                     <h1> Contact Us</h1>
                     <p>Let us know how you like our site or if you have any questions!</p>
+                    <!-- Contact Form-->
                     <form onsubmit="return sendMail(this);">
+                        <label for="fullname" class="sr-only">Enter your full name</label>
                         <input type="text" id="fullname" name="fullname" placeholder="Full name" minlength="3" required><br>
+                        <label for="email" class="sr-only">Enter your email address</label>
                         <input type="email" id="email" name="email" placeholder="Email address" required><br>
+                        <label for="comment" class="sr-only">Enter any questions, comments or feedback here.</label>
                         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Enter message here..." minlength="10" required></textarea><br>
                         <span id="submit-msg"></span> <!-- Submission successful message will be added to this span on submit of form.-->
                         <button type="submit" id="form-button">Submit</button>
@@ -492,9 +489,10 @@
             <div class="container">
                 <div class="row g-0">
                     <div class="col-12" id="footer-content">
-                       <a href="https://www.facebook.com/people/Shane-Keran/100011246438616"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/shanek195/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <!-- Social links-->
+                       <a href="https://www.facebook.com/people/Shane-Keran/100011246438616" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/shanek195/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -508,6 +506,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- js-cookie CDN-->
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+     <!-- Email Js -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <!-- External Javascript files -->
     <script src="assets/scripts/cookies.js"></script>
     <script src="assets/scripts/script.js"></script>
