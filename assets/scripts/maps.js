@@ -83,7 +83,7 @@ function initMap() {
         map.setZoom(12);
     });
 
-
+    // function to show markers on the map
     function showMarkers(markers){
         for(var i = 0; i < markers.length; i++) {
                         addMarker(markers[i]);

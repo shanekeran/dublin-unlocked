@@ -4,8 +4,8 @@ if(cookie){
     console.log("Splash page not displayed as 'returning' cookie was found.");
 } else{
     console.log("Splash page displayed as no 'returning' cookie found.");
-    $("#splash-page").css("display","block");
-    $("#main-content").hide();
+    $("#splash-page").css("display","block"); // Displays splash page
+    $("#main-content").hide(); // Hides main content
 }
 
 // Sets the cookie with an expiration date of 30days

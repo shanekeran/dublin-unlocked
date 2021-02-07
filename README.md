@@ -1,5 +1,5 @@
 # Dublin Unlocked
-<i>Your key to the city.</i>
+<i>Your key to the city.</i> 
 
 Dublin unlocked is an interactive city guide for Dublin, Ireland. It offers value to both visitors and locals alike. 
 It provides a live weather forecast, local events, and a map showcasing the best spots in the city. 
@@ -11,12 +11,22 @@ The website maintains its design on devices of all screen sizes, so it can be en
 
 ![mockup of the website on different devices](assets/documents/mockup.JPG "Dublin Unlocked display")
 
+
+## Table of contents
+>1. [User Experience](#user-experience-(ux))
+>2. [Testing](#testing)
+>3. [Deployment](#deployment)
+>4. [Credits](#credits)
+
 ## User Experience (UX)
 ___
 ### Overview
+
 I used user stories and the five planes of user experience design as a framework for planning the project.
+ 
 
 ### User stories
+
 
 *As a site user, I want to*
 
@@ -35,7 +45,9 @@ I used user stories and the five planes of user experience design as a framework
 - To receive an email if a user submits a comment or feedback through the website’s contact form.
 - To display a message to the user if one of the features fails to load, so that they can try again later.
 
+
 ### Strategy
+
 
 The purpose of the website is to promote the city of Dublin and what is has to offer. 
 It aims to be used as digital guidebook to help you navigate to the best spots in town, 
@@ -53,7 +65,9 @@ This can be achieved by taking new users to a splash page that displays the Dubl
 On the main site they can also connect with the company on other social media platforms listed in the footer. 
 If the website has a large user base that frequently returns to check for the latest information, then it will help drive B2B sales between Dublin Unlocked and local businesses who wish to list their business on the site.
 
+
 ### Scope
+
 
 Features to be included on the website are:
 - Dark mode toggle for the website that changes the background and font colour. As an extra it also displays night-time imagery and nightlife options in the attractions section.
@@ -70,7 +84,9 @@ Features to be introduced at a later date:
 This can be implemented when the website receives the minimum amount of traffic required to use the Booking API.
 - Introduce a “Tours” section for booking tour tickets like some competitors offer.
 
+
 ### Structure
+
 
 Dublin Unlocked is a single page website with 5 sections.
 
@@ -100,15 +116,20 @@ Dublin Unlocked is a single page website with 5 sections.
     The Contact section contains a form for feedback or comments to be submitted by the user. 
     On submission, it sends an email to the site owner and displays a confirmation message to the user.
 
+
 ### Skeleton
+
 
 I used Balsamiq to create a wireframe for each device. The wireframes were created in the planning stage, so the current version differs slightly.
 
-![Wireframe for Desktop, Tablet and Mobile.](assets/documents/wireframe.png)
+[Wireframe for Desktop, Tablet and Mobile.](assets/documents/wireframe.png)
+
 
 ### Surface
 
+
 #### Colour
+
 For my background color, I picked a linear gradient that subtly fades from white to light blue (**#eaf4f9**) with black as the font colour.
 
 ![background colour gradient](https://i.imgur.com/vhcnhrc.png)  
@@ -122,21 +143,27 @@ All the buttons have a standardised blue gradient colour.
 ![button colour gradient](https://i.imgur.com/qIxcHCJ.png)
 
 ### Typography
+
 I chose the Raleway font for my headings and Open Sans font for my content. 
 I specified Sans-serif font to be used in their place if Google Fonts is unavailable. Both fonts were chosen for their readability and professional look.
 
 ### Design
+
 The current version of the website does not include the Hotels section that featured in the wireframes, this will be added at a later date. 
 Overall, I am very pleased with aesthetic of the entire page, especially the vivid imagery of Dublin and the ability to allow the user to experience that during day and night-time. 
 
+
 ## Technologies used
 ___
+
 ### Languages
+
 - HTML5
 - CSS3
 - Javascript
 
 ### Frameworks, Libraries & Programs used
+
 1. Git 
 
     Used for version control.
@@ -204,23 +231,37 @@ ___
 
     This was used to automatically send an email to the site owner on submission of the contact form.
 
+
+[Back to top](#dublin-unlocked)
+
+
 ## Testing
 ___
 
+
+### Validation
+
+
 The W3C Markup Validator, W3C CSS Validator Services and jshint were used to validate the project to ensure there were no syntax errors.
 
-### HTML Validation
+#### HTML Validation
+
 Index.html and 404.html passed through the W3C HTML Validator with no errors.
 
-### CSS Validation
+#### CSS Validation
+
 My only external css file (style.css) passed through the W3C CSS Validator with no errors.
 
-### Javascript Validation
+#### Javascript Validation
+
 All four external javascript files passed through jshint with no major issues.
+
 
 ### Testing the User stories
 
+
 #### Site User
+
 1. Access the website from any device and easily navigate the website.
     * With the help of measurements such as viewport width (vw) and viewport (vh), Bootstrap’s grid layout and 
     my usage of Media queries, Dublin Unlocked is responsive on all device sizes. 
@@ -254,6 +295,7 @@ All four external javascript files passed through jshint with no major issues.
         As this is a fictional company, I have linked my own social accounts as a filler.
 
 #### Site owner
+
 1. Provide accurate, up to date information that gives the user an incentive to return to the website for information in the future.
     * I have tested the Ticketmaster API and Visual Crossing API over several days, and there was always a collection of new events and an updated weather forecast available. 
     * I even found myself checking for new events every time I was working on other parts of the page, as it is interesting to see what shows up.
@@ -283,7 +325,63 @@ All four external javascript files passed through jshint with no major issues.
         *  The Visual Crossing API fails to load, the following message appears ”Weather Forecast Unavailable. Please try again later.”.
     * There is also a custom 404 page to redirect users back to the home page without having to use the browser back button.
 
+
 ### Further Testing
+
+
+#### Feature Testing
+
+*Feature testing was manually completed on the deployed site*
+
+1. Splash Page
+    - Click enter button to ensure it hid splash page and revealed main content.
+    - Revisit Splash page to confirm that the cookie is working correctly by not displaying the Splash page.
+
+2. Navigation bar
+    - Visit all links to check they directed to the correct section.
+    - Hover over links to ensure correct styling is applied.
+    - View on smaller devices to ensure Navigation bar is collapsed.
+    - Click hamburger icon to ensure navigation links appear on a dropdown menu.
+    - Test dropdown menu on a screen with a small height to check that overflow scroll works as expected.
+
+3. Time select button (Day/Night toggler)
+    - Click button to ensure function is operating correctly.
+    - Check that the text and icon inside the button changes according to the option available.
+    - Ensure that the background colour of the page toggles.
+    - Ensure that font colour of the page toggles.
+    - Ensure that the section images toggle.
+    - Ensure that alternative attractions options are now displayed.
+    - Test alternative attractions options display on map, with correct info markers.
+
+4. Google Maps
+    - Test that markers appear when all buttons are clicked.
+    - Ensure that info windows display when a marker is selected.
+    - Ensure that active info window closes when another marker is selected.
+    - Ensure the map zooms out/in depending on custom settings on each button.
+    - Hover over each button to check that styling works.
+    - Select each button to check styling works.
+
+5. Events
+    - View on a large screen that events are displaying in a carousel and as cards on a smaller screen.
+    - Test carousel next and previous controls are functioning correctly.
+    - Click links to ensure they open in a new tab.
+    - Check that images are the correct aspect ratio and not overlapping content.
+    - Ensure carousel is automatically scrolling at set intervals.
+
+6. Contact form
+    - Test full name input's minimum range by entering only one character.
+    - Test email input by not entering a correct email format.
+    - Test text area's minimum range by only entering one word.
+    - Click submit to ensure feedback is given.
+    - Check email inbox to ensure form content is being sent correctly.
+
+7. Footer 
+    - Hover all icons to ensure styling is present.
+    - Click on all links to ensure they open in a new tab.
+
+
+#### Other testing
+
 
 - Website has been tested on the following browsers, using the latest version available: Chrome, Safari, Edge and Firefox. The tests were successful.
 - All internal and external links on the website have been tested and work as intended. Tested by clicking every link on each page.
@@ -294,7 +392,10 @@ All four external javascript files passed through jshint with no major issues.
     I'm delighted to see such high results for accessibility, best practices and SEO. I'm also happy with my high performance on desktop but unfortunately performance on mobile is quite low,
     at just above 50. Since the website contains a lot of images, even with lazy-loading and other tactics, I was unable to get this higher at present.
 
+
 ### Known Bugs and Fixes
+
+
 List below are some of the more time-consuming bugs I encountered while creating Dublin Unlocked.
 
 1. The gallery animation would come away from the side of the page on larger screens. 
@@ -306,27 +407,37 @@ List below are some of the more time-consuming bugs I encountered while creating
     </details>
 
 2. Animated gallery displaying incorrectly on some browsers. 
+
     This was fixed by removing the webkit vendor prefix on the animation properties.
 
 3. Parallax images displaying incorrectly on Safari. 
+
     Image was static, zoomed in and pixelated. Fixed by adding in code found on Stack Overflow. 
     Background-attachment: fixed is not supported so It was replaced with background-attachment: scroll.
 
 4. Events duplicating
+
     At first, I displayed the most recent upcoming events in Dublin but since Ticketmaster listed the same event multiple times but for different ticket types, it meant that 3/6 events could be the same performer.
     I remedied this by adding the random parameter to the API URL.
 
 5. Visual Crossing API not loading occasionally
+
     Sometimes when the page is loaded, the weather forecast does not display until you refresh the page. I added a display message to alert the user to try again later to remedy this until it can be resolved. 
     My mentor advised that this can be a known issue with free APIs.
 
-6. Google Maps API 
-    I removed the async attribute to allow the API more time to connect and this seems to have made the issue much less frequent.
-    This is another issue I plan to properly address in the future when I find a better solution.
+6. Google Maps not displaying
+
+    I removed the async attribute to allow the API more time to connect and this seems to have made the issue much less frequent. I havent seen the issue reoccur since but I'm reluctant to say its fixed. On a regular 404, the standard google 404 message displays.
+
+
+[Back to top](#dublin-unlocked)
+
 
 ## Deployment
 ___
+
 ### Github
+
 
 This project is deployed using GitHub pages using the following process,
 
@@ -355,8 +466,13 @@ You can fork a GitHub Repository to make a copy of the original repository to vi
 5. Type "git clone", and paste the link you copied in step 3.
 6. Press Enter to have the local clone created.
 
+
+[Back to top](#dublin-unlocked)
+
+
 ## Credits
 ___
+
 ### Code
 
 - Stack Overflow
@@ -432,3 +548,6 @@ ___
 - My fellow Code Institute students for their suggestions.
 
 - Tutor support at Code Institute, for answering my technical questions.
+
+
+[Back to top](#dublin-unlocked)

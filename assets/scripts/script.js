@@ -1,3 +1,9 @@
+/* This file contains Javascript for:
+    1. Day/Night toggle
+    2. Visual Crossing Weather API
+    3. Tciketmaster API 
+*/
+
 $( document ).ready(function() {
 
 //-------------- Day / Night mode toggle ------------------ \\
@@ -167,10 +173,11 @@ $( document ).ready(function() {
             const dateFormat =  dateFinder.getDate()+"/"+(dateFinder.getMonth()+1)+"/"+dateFinder.getFullYear();
             const eventUrl = $(".event-url")[i];
             
-            $(eventTitle).html(eventData.name);
-            $(venue).html(eventData._embedded.venues[0].name);
-            $(eventDate).html(dateFormat);
-            $(eventUrl).attr("href",eventData.url);
+            $(eventTitle).html(eventData.name); // Sets Event Title
+            $(venue).html(eventData._embedded.venues[0].name); // Sets Venue name
+            $(eventDate).html(dateFormat); // Sets Event date
+            $(eventUrl).attr("href",eventData.url); // Sets Event Ticketmaster URL
+
             //for loop iterates through the first 8 images of an event and sets the first image with a width of 1000px+ and a ratio of 16:9.
             for (let j = 0; j < 8; j++) {
                 const eventGallery = eventData.images[j];
@@ -187,8 +194,8 @@ $( document ).ready(function() {
     } else {
         console.log("Event API failed to load");
         for (let i = 0; i < 12; i++) {
-            $("#event-api-container").children().hide();
-            $("#event-api-container").html("<p>Event information currently unavailable. Please try again later to discover exciting events!.</p>");
+            $("#event-api-container").children().hide(); // Hides event container
+            $("#event-api-container").html("<p>Event information currently unavailable. Please try again later to discover exciting events!.</p>"); // Displays error message to user
         }
     }
     };
