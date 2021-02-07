@@ -91,7 +91,7 @@ p,li, .daily-forecast, .back-to-top, #enter-button{
 
 @supports (-webkit-touch-callout: none) { /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
   #attractions-image, #events-image, #weather-image {
-    background-attachment: scroll; /* Fix parralax image display on Safari */
+    background-attachment: scroll; /* Fix parralax image display on Safari / iOS */
 } 
 }
 

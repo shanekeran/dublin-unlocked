@@ -207,9 +207,9 @@ ___
 
     I used Imgur to host most of my site images.
 
-11. Unsplash 
+11. Unsplash / Pexel
 
-    Unsplash was used to obtain free to use images of Dublin city.
+    Used to obtain free to use images of Dublin city.
 
 12. Google Maps Javascript API 
 
@@ -217,7 +217,7 @@ ___
 
 13. Ticketmaster API 
 
-    This API was used to display random upcoming event details and imagery.
+    This API was used to display random upcoming event details and imagery. 
 
 14. Visual Crossing Weather API 
 
@@ -503,6 +503,11 @@ ___
         * [Google Maps Javascript API Tutorial by Traversy Media](https://www.youtube.com/watch?v=Zxf1mnP5zcw&list=LL&index=4&t=1437s)
         * [Send Email directly from JavaScript by Code with Voran ](https://www.youtube.com/watch?v=x7Ewtay0Q78&list=LL&index=1)
 
+- API documentation
+
+    * Each API documentation supported my learning of how to properly use their APIs.
+
+
 ### Media
 
 - Unsplash
@@ -540,6 +545,11 @@ ___
 - Clker
 
     * [Weather icons](http://www.clker.com/clipart-weather-symbols.html)
+
+### Content
+
+- Localhistories
+    * I took an extract from a [post by Tim Lambert](http://www.localhistories.org/dublin.html) to use as my history content.
 
 ### Acknowledgements
 
